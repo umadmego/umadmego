@@ -13,3 +13,60 @@ body {
   overflow-x: hidden;
   color: #000000;
 }
+
+/* Input styles */
+.inputContainer {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  position: relative;
+}
+
+.inputContainer>label {
+  font-size: 1.02038125rem;
+  font-weight: 400;
+}
+
+.formContainer>h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 59.87px;
+  /* margin-bottom: 9px; */
+}
+
+.inputContainer>* input,
+textarea {
+  padding: 12px;
+  font-size: 1.02038125rem;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #bcbdc1;
+  border-radius: 2.04px;
+  width: 100%;
+  color: #000
+}
+
+.inputContainer>* input::placeholder,
+textarea::placeholder {
+  color: #acadb4;
+}
+
+.inputError {
+  border: 1px solid #F13637 !important;
+}
+
+.error {
+  color: #F13637;
+  font-size: 0.75rem;
+}
+
+.errorText {
+  color: #F13637;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
