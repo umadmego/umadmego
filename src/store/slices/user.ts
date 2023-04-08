@@ -1,6 +1,6 @@
 import { sendFeedback } from './../../functions/feedback';
 import { createSlice } from '@reduxjs/toolkit';
-import { UserType } from '../../../types/types';
+import { UserType } from '@/types/types';
 
 // Define a type for the slice state
 
