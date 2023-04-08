@@ -7,12 +7,31 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      backgroundImage: {},
+      fontFamily: {
+        primary: "'DM Sans', sans-serif",
+      },
+      textColor: {
+        primary: '#002F72',
+        secondary: '#FF6634',
+        success: '#08A05C',
+        error: '#F13637',
+        warning: '#EEB614',
+        lightGrey: '#A9A9A9',
+      },
+      backgroundColor: {
+        primary: '#002F72',
+        secondary: '#FF6634',
+        success: '#08A05C',
+        error: '#F13637',
+        warning: '#EEB614',
+      },
+      borderColor: {
+        error: '#F13637',
+        lightGrey: '#A9A9A9',
+        success: '#08A05C',
       },
     },
   },
   plugins: [],
-}
+};
