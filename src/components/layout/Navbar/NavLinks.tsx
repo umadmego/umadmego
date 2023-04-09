@@ -27,7 +27,7 @@ function NavLinks() {
           </Link>
         ))}
       </div>
-      <Button className='ml-[4vw]'>Log in</Button>
+      {/* <Button className='ml-[4vw]'>Log in</Button> */}
     </div>
   );
 }
