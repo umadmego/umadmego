@@ -1,3 +1,4 @@
+import Button from '@/common/Button';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
@@ -10,7 +11,7 @@ function NavLinks() {
     1;
   };
   return (
-    <div>
+    <div className='flex items-center'>
       <div className='flex items-center gap-9'>
         {links.map((link) => (
           <Link
@@ -26,6 +27,7 @@ function NavLinks() {
           </Link>
         ))}
       </div>
+      <Button className='ml-[4vw]'>Log in</Button>
     </div>
   );
 }

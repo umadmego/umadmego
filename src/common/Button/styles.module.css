@@ -6,6 +6,10 @@
   transition: filter 0.5s;
   outline: none;
   border: none;
+  color: #fff;
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .button:hover {
