@@ -1,0 +1,13 @@
+.button {
+  background-color: #FF6634;
+  padding-inline: 35px;
+  padding-block: 9px;
+  border-radius: 5px;
+  transition: filter 0.5s;
+  outline: none;
+  border: none;
+}
+
+.button:hover {
+  filter: brightness(90%);
+}

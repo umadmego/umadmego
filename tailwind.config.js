@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {},
       fontFamily: {
-        primary: "'DM Sans', sans-serif",
+        primary: 'DM Sans, sans-serif',
+        secondary: 'Sora, sans-serif',
       },
       textColor: {
         primary: '#002F72',
@@ -27,9 +28,14 @@ module.exports = {
         warning: '#EEB614',
       },
       borderColor: {
+        primary: '#002F72',
+        secondary: '#FF6634',
         error: '#F13637',
         lightGrey: '#A9A9A9',
         success: '#08A05C',
+      },
+      padding: {
+        primary: '6vw',
       },
     },
   },
