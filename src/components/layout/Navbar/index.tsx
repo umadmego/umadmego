@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 function Navbar() {
   return (
-    <nav className='pl-primary pr-primary'>
+    <nav className='pl-primary pr-primary h-24'>
       <div className='flex justify-between items-center'>
         <Link href='/'>
           <Image src={Logo} alt="The Father's House" className='h-[90px] w-auto' />
