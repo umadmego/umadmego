@@ -22,7 +22,7 @@ function HeroSection() {
       }`}
       // Height of header is screen height - navbar height - mobile bar height if open
     >
-      <div className='flex justify-between h-full'>
+      <div className='flex justify-between h-full overflow-hidden'>
         <IntroSection />
         <DynamicGallery />
       </div>
