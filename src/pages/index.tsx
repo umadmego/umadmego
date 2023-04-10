@@ -1,5 +1,6 @@
 // import { useEffect, useRef } from 'react';
 // import gsap from 'gsap';
+import HeroSection from '@/components/homepage/HeroSection';
 import AppLayout from '@/components/layout/AppLayout';
 
 export default function Home() {
@@ -10,5 +11,9 @@ export default function Home() {
   //   gsap.from(paragraphRef.current, { x: 300, duration: 2 });
   // }, [paragraphRef]);
 
-  return <AppLayout>Homepage</AppLayout>;
+  return (
+    <AppLayout>
+      <HeroSection />
+    </AppLayout>
+  );
 }
