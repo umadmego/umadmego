@@ -7,7 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
       fontFamily: {
         primary: 'DM Sans, sans-serif',
         secondary: 'Sora, sans-serif',

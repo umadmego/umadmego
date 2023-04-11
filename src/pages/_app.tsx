@@ -1,6 +1,7 @@
 import HeadElement from '@/components/layout/HeadElement';
 import { store } from '@/store/store';
 import '@/styles/globals.css';
+import '@/styles/backgrounds.css';
 import type { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
 
