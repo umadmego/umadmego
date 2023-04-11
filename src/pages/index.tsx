@@ -1,6 +1,7 @@
 // import { useEffect, useRef } from 'react';
 // import gsap from 'gsap';
 import HeroSection from '@/components/homepage/HeroSection';
+import LinkSection from '@/components/homepage/LinkSection';
 import WelcomeSection from '@/components/homepage/WelcomeSection';
 import AppLayout from '@/components/layout/AppLayout';
 
@@ -16,6 +17,7 @@ export default function Home() {
     <AppLayout>
       <HeroSection />
       <WelcomeSection />
+      <LinkSection />
     </AppLayout>
   );
 }
