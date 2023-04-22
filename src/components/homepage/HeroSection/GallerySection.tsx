@@ -7,8 +7,8 @@ function GallerySection() {
   return (
     <div className='flex gap-[18px]'>
       <div className={styles.imageSlider}>
-        {ImageGroup1.map((image) => (
-          <ImageCard image={image} />
+        {ImageGroup1.map((image, index) => (
+          <ImageCard image={image} key={index} />
         ))}
       </div>
       <div
@@ -17,13 +17,13 @@ function GallerySection() {
           animationDirection: 'alternate-reverse',
         }}
       >
-        {ImageGroup2.map((image) => (
-          <ImageCard image={image} />
+        {ImageGroup2.map((image, index) => (
+          <ImageCard image={image} key={index} />
         ))}
       </div>
       <div className={styles.imageSlider}>
-        {ImageGroup3.map((image) => (
-          <ImageCard image={image} />
+        {ImageGroup3.map((image, index) => (
+          <ImageCard image={image} key={index} />
         ))}
       </div>
     </div>
