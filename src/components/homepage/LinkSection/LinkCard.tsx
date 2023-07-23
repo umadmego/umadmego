@@ -15,7 +15,7 @@ function LinkCard({ link }: { link: LinkType }) {
             {link.label}
           </span>
           <Link href={link.href}>
-            <Button className='!min-w-[150px] lg:!min-w-[230px] !min-h-[40px] lg:!min-h-[60px]'>
+            <Button className='!min-w-[150px] lg:!min-w-[230px] h-[40px] lg:!min-h-[60px]'>
               {link.buttonLabel}
             </Button>
           </Link>
