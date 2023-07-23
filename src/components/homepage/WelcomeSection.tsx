@@ -9,7 +9,7 @@ const WelcomeSection = () => {
     <section id='welcome' className='px-primary homepage-welcome-bg pt-[28px]'>
       <div className='lg:grid lg:grid-cols-2 items-center gap-10 flex flex-col-reverse'>
         <Image src={WelcomeImage} alt='Welcome' />
-        <div className='flex flex-col items-center lg:items-start text-center lg:text-left'>
+        <div className='flex flex-col items-center lg:items-start text-center lg:text-left lg:mb-10'>
           <h2 className='text-secondary lg:text-4xl text-[26px] font-secondary font-semibold mb-[27px]'>
             You&apos;re welcome to worship with us
           </h2>
