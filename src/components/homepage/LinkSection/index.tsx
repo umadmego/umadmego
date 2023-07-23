@@ -4,7 +4,7 @@ import links from './links';
 
 function LinkSection() {
   return (
-    <div>
+    <div className='grid grid-cols-1 md:grid-cols-3'>
       {links.map((link) => (
         <LinkCard key={link.label} link={link} />
       ))}

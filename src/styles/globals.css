@@ -14,6 +14,10 @@ body {
   color: #000000;
 }
 
+* {
+  line-height: normal !important;
+}
+
 /* Input styles */
 .inputContainer {
   display: flex;

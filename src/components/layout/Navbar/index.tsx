@@ -3,6 +3,7 @@ import Logo from '@/assets/brand/logo.png';
 import Image from 'next/image';
 import NavLinks from './NavLinks';
 import Link from 'next/link';
+import MobileMenu from './MobileMenu';
 
 function Navbar() {
   return (
@@ -11,7 +12,12 @@ function Navbar() {
         <Link href='/'>
           <Image src={Logo} alt="The Father's House" className='h-[90px] w-auto' />
         </Link>
-        <NavLinks />
+        <div className='hidden lg:block'>
+          <NavLinks />
+        </div>
+        <div className='lg:hidden block'>
+          <MobileMenu />
+        </div>
       </div>
     </nav>
   );

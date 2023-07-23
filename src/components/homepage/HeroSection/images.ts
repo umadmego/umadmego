@@ -17,6 +17,39 @@ import { StaticImageData } from 'next/image';
 
 type Group = StaticImageData[];
 
-export const ImageGroup1: Group = [Image1, Image2, Image3, Image4, Image5];
-export const ImageGroup2: Group = [Image6, Image7, Image8, Image9, Image10];
-export const ImageGroup3: Group = [Image11, Image12, Image13, Image14, Image15];
+export const ImageGroup1: Group = [
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
+];
+export const ImageGroup2: Group = [
+  Image6,
+  Image7,
+  Image8,
+  Image9,
+  Image10,
+  Image6,
+  Image7,
+  Image8,
+  Image9,
+  Image10,
+];
+export const ImageGroup3: Group = [
+  Image11,
+  Image12,
+  Image13,
+  Image14,
+  Image15,
+  Image11,
+  Image12,
+  Image13,
+  Image14,
+  Image15,
+];
