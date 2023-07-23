@@ -2,7 +2,7 @@ import Button from '@/common/Button';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import WelcomeImage from '../../assets/images/home/welcome.png';
+import WelcomeImage from '../../assets/images/home/welcome.webp';
 
 const WelcomeSection = () => {
   return (
