@@ -1,6 +1,6 @@
 import { store } from './../store/store';
 import { getUserSession } from './../functions/userSession';
-import { API_URL } from './../functions/environmentVariables';
+import { API_KEY, API_URL } from './../functions/environmentVariables';
 import axios from 'axios';
 import { signOut } from '../store/slices/user';
 
@@ -9,6 +9,7 @@ const sessionDetails = getUserSession();
 export const appAxios = axios.create({
   headers: {
     'Content-Type': 'application/json',
+    'x-api-key': API_KEY,
   },
   baseURL: API_URL,
 });
