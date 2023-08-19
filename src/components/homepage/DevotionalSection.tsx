@@ -25,6 +25,8 @@ const DevotionalSection = () => {
     };
     getDevotional();
   }, []);
+
+  // if (!de)
   return (
     <section
       id='devotional'
@@ -52,7 +54,7 @@ const DevotionalSection = () => {
               <Button className='!w-[280px] !max-w-full'>Read Devotional</Button>
             </>
           ) : (
-            <>No devotional found for today</>
+            <span className='text-white'>No devotional found for today</span>
           )}
         </div>
       </div>
