@@ -17,14 +17,19 @@ function HeroSection() {
 
   return (
     <header
-      className={`bg-[#FFF2EE] ${
-        mobileBarOpen ? 'h-[calc(100vh-96px-48px)]' : 'h-[calc(100vh-96px)]'
+      className={`bg-[#FFF2EE] h-full ${
+        mobileBarOpen ? 'lg:h-[calc(100vh-96px-48px)]' : 'lg:h-[calc(100vh-96px)]'
       }`}
       // Height of header is screen height - navbar height - mobile bar height if open
     >
-      <div className='flex justify-between h-full overflow-hidden'>
-        <IntroSection />
+      <div className='flex justify-between h-full overflow-hidden lg:flex-row flex-col-reverse items-center'>
+        <div className='hidden lg:block'>
+          <IntroSection />
+        </div>
         <DynamicGallery />
+      </div>
+      <div className='lg:hidden flex justify-center mt-4'>
+        <IntroSection />
       </div>
     </header>
   );

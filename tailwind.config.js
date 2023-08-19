@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/common/**/*.{js,ts,jsx,tsx}',
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
@@ -12,22 +13,22 @@ module.exports = {
         secondary: 'Sora, sans-serif',
       },
       textColor: {
-        primary: '#0B003C',
-        secondary: '#FE6534',
+        primary: '#002F72',
+        secondary: '#FF6634',
         success: '#08A05C',
         error: '#F13637',
         warning: '#EEB614',
         lightGrey: '#A9A9A9',
       },
       backgroundColor: {
-        primary: '#0B003C',
+        primary: '#002F72',
         secondary: '#FE6534',
         success: '#08A05C',
         error: '#F13637',
         warning: '#EEB614',
       },
       borderColor: {
-        primary: '#0B003C',
+        primary: '#002F72',
         secondary: '#FE6534',
         error: '#F13637',
         lightGrey: '#A9A9A9',

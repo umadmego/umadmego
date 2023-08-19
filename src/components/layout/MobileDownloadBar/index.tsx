@@ -29,20 +29,23 @@ function MobileDownloadBar() {
   return (
     <div className='bg-[#F6F6F6] flex justify-center items-center flex-wrap w-full h-12 relative'>
       <div className='flex items-center gap-6 text-[11px] text-[#6F6F6F]'>
-        <span className='font-bold text-xl'>Download our Mobile App today!</span>
+        <span className='font-bold text-xl hidden md:block'>
+          Download our Mobile App today!
+        </span>
         <a
-          className='flex items-center gap-[9px] bg-[#E2E2E2] w-[118.3px] 
+          className='flex items-center gap-[9px] bg-[#E2E2E2] w-fit p-2
         rounded-sm h-[29.79px] justify-center hover:brightness-90 duration-300'
           href='https://play.google.com/store/apps/details?id=com.tfhmobile'
           target='_blank'
           rel='noreferrer'
         >
           <Image src={PlayStoreIcon} alt='Play Store' />
-          <span>Playstore</span>
+          <span className='hidden md:block'>PlayStore</span>
+          <span className='md:hidden'>Download from PlayStore</span>
         </a>
       </div>
       <button
-        className='w-[26.91px] h-[26.91px] bg-[#D9D9D9] rounded-full absolute right-16
+        className='w-[26.91px] h-[26.91px] bg-[#D9D9D9] rounded-full absolute md:right-16 right-5
        flex items-center justify-center hover:brightness-90 duration-300'
         onClick={() => dispatch(closeMobileBar())}
       >

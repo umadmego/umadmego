@@ -1,5 +1,20 @@
 .homepage-welcome-bg {
-  background-image: url(../assets/backgrounds/welcome.png);
+  background-image: url(../assets/backgrounds/welcome.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.devotional-bg {
+  background-image: url(../assets/backgrounds/devotional.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.message-bg {
+  background-image: url(../assets/backgrounds/message.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

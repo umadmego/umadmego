@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
-import Giving from '../../../assets/images/home/links/giving.png';
-import Message from '../../../assets/images/home/links/message.png';
-import Testimony from '../../../assets/images/home/links/testimony.png';
+import Giving from '../../../assets/images/home/links/giving.webp';
+import Message from '../../../assets/images/home/links/message.webp';
+import Testimony from '../../../assets/images/home/links/testimony.webp';
 
 export interface LinkType {
   image: StaticImageData;

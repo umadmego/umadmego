@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 
 function GallerySection() {
   return (
-    <div className='flex gap-[18px]'>
+    <div className='flex gap-[18px] lg:flex:[50%] h-[50vh] lg:h-full'>
       <div className={styles.imageSlider}>
         {ImageGroup1.map((image, index) => (
           <ImageCard image={image} key={index} />
