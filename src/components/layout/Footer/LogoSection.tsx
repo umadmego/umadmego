@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import WhiteLogo from '@/assets/brand/logo-white.png';
-import GooglePlay from '@/assets/svgs/app/google-play.svg';
+import PlayStore from '@/common/AppButtons/PlayStore';
 
 function LogoSection() {
   return (
@@ -13,14 +13,8 @@ function LogoSection() {
         provision and meeting of some basic needs of life as well as putting in place some
         empowerment programmes and activities.
       </p>
-      <p className='text-[#FFC107] text-sm font-bold mb-3'>NOW AVAILABLE ON</p>
-      <a
-        href='https://play.google.com/store/apps/details?id=com.tfhmobile'
-        target='_blank'
-        rel='noreferrer'
-      >
-        <Image src={GooglePlay} alt='Google Play' />
-      </a>
+      <p className='text-warning text-sm font-bold mb-3'>NOW AVAILABLE ON</p>
+      <PlayStore />
     </div>
   );
 }

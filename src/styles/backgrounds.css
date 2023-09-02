@@ -18,3 +18,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.download-bg {
+  background-image: url(../assets/backgrounds/download.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

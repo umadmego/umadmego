@@ -11,13 +11,14 @@ module.exports = {
       fontFamily: {
         primary: 'DM Sans, sans-serif',
         secondary: 'Sora, sans-serif',
+        cursive: 'Kaushan Script, cursive',
       },
       textColor: {
         primary: '#002F72',
         secondary: '#FF6634',
         success: '#08A05C',
         error: '#F13637',
-        warning: '#EEB614',
+        warning: '#FFC107',
         lightGrey: '#A9A9A9',
       },
       backgroundColor: {
@@ -25,7 +26,7 @@ module.exports = {
         secondary: '#FE6534',
         success: '#08A05C',
         error: '#F13637',
-        warning: '#EEB614',
+        warning: '#FFC107',
       },
       borderColor: {
         primary: '#002F72',
