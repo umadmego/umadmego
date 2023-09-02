@@ -11,7 +11,7 @@ const nextConfig = {
     YOUTUBE_CHANNEL_ID: 'UC4jT_fVaY8Yf_FkWaDphPPg',
   },
   images: {
-    domains: ['i.ytimg.com'],
+    domains: ['i.ytimg.com', 'res.cloudinary.com'],
   },
 };
 

@@ -11,12 +11,12 @@ const DownloadAppSection = () => {
       className='download-bg flex lg:items-start items-end justify-end flex-wrap lg:flex-nowrap relative'
     >
       <div className='lg:flex-[50%] flex flex-col px-primary lg:py-[162px] py-[100px]'>
-        <h1 className='text-white font-secondary text-[40px] lg:text-[55px] font-bold mb-[27px]'>
+        <h2 className='text-white font-secondary text-[40px] lg:text-[55px] font-bold mb-[27px]'>
           <span className='font-normal text-[51px] lg:text-[64px] text-warning font-cursive'>
             Download
           </span>{' '}
           Father&apos;s House Church Mobile App
-        </h1>
+        </h2>
         <p className='text-white text-md lg:text-xl font-normal mb-[64px] lg:md-[74px]'>
           With the Father&apos;s House Mobile App, you can access the church on the go.
           Have access to daily devotional, church events, announcement and even stream
