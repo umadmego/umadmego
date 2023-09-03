@@ -1,7 +1,7 @@
 .button {
   background-color: #FF6634;
   padding-inline: 20px;
-  min-width: fit-content;
+  width: fit-content;
   height: 60px;
   border-radius: 5px;
   transition: all 0.5s;
@@ -9,7 +9,7 @@
   border: 2px solid transparent;
   color: #fff;
   font-family: DM Sans, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   display: flex;
   align-items: center;

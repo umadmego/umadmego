@@ -16,10 +16,12 @@ const timelines: { title: string; time: string }[] = [
 ];
 
 export const serviceTimelines = timelines.map((timeline) => (
-  <div key={timeline.title} className='!h-fit'>
-    <h2 className='text-[30px] md:text-[40px] lg:text-[50px] mb-[19px] font-normal font-secondary'>
+  <div key={timeline.title} className='h-[calc(8rem)] overflow-y-hidden'>
+    <h2 className='text-[30px] md:text-[40px] lg:text-[50px] mb-[19px] font-normal font-secondary leading-4'>
       {timeline.title}
     </h2>
-    <p className='font-secondary text-lg md:text-xl lg:text-[28px]'>{timeline.time}</p>
+    <p className='font-secondary text-lg md:text-xl lg:text-[28px] leading-4'>
+      {timeline.time}
+    </p>
   </div>
 ));

@@ -22,7 +22,11 @@ const TextChange = ({ texts, time }: { texts: React.ReactNode[]; time?: number }
 
   if (!texts) return null;
 
-  return <div ref={parentRef}>{texts[currentIndex]}</div>;
+  return (
+    <div ref={parentRef}>
+      <div key={currentIndex}>{texts[currentIndex]}</div>
+    </div>
+  );
 };
 
 export default TextChange;

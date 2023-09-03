@@ -1,17 +1,20 @@
 import React from 'react';
 import styles from './styles.module.css';
+import LoadingIndicator from '../LoadingIndicator/LoadingIndicator';
 
 function Button({
   className,
   type = 'button',
   onClick,
   style,
+  loading = false,
   children,
 }: {
   className?: string;
   type?: 'button' | 'submit' | 'reset' | undefined;
   onClick?: () => void;
   style?: React.CSSProperties;
+  loading?: boolean;
   children: React.ReactNode;
 }) {
   return (
@@ -21,7 +24,7 @@ function Button({
       style={style}
       onClick={onClick}
     >
-      {children}
+      {loading ? <LoadingIndicator size={20} /> : children}
     </button>
   );
 }
