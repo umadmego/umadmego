@@ -18,3 +18,31 @@
   background-size: cover;
   background-position: center;
 }
+
+.download-bg {
+  background-image: url(../assets/backgrounds/download.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-bg {
+  background-image: url(../assets/backgrounds/events.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.direction-bg {
+  background-image: url(../assets/backgrounds/direction.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.subscriber-bg {
+  background-image: url(../assets/backgrounds/subscriber.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

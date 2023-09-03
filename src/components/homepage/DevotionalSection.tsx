@@ -26,7 +26,6 @@ const DevotionalSection = () => {
     getDevotional();
   }, []);
 
-  // if (!de)
   return (
     <section
       id='devotional'

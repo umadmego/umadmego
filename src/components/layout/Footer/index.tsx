@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer>
       <div className='bg-black pt-[89px]'>
-        <div className='grid grid-flow-col gap-20  pr-primary pl-primary'>
+        <div className='grid lg:grid-cols-3 lg:gap-[6vw] gap-[60px] md:grid-cols-2 grid-cols-1 pr-primary pl-primary'>
           <LogoSection />
           <LinkSection />
           <ContactSection />
