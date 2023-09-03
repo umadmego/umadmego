@@ -34,7 +34,7 @@ function LinkSection() {
         ))}
       </div>
       {/* Social Links */}
-      <div className='text-white mt-[127px] flex items-center gap-[30px]'>
+      <div className='text-white lg:mt-[127px] mt-[67px] flex items-center gap-[30px]'>
         {socialLinks.map((link) => (
           <a
             href={link.destination}

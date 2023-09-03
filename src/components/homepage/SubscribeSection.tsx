@@ -46,7 +46,11 @@ const SubscribeSection = () => {
           className='p-3 text-lg text-white bg-transparent border-white md:rounded-r-none rounded-l-[5px] rounded-[5px] border-[1.5px] h-[60px] w-full md:border-r-0 placeholder:text-lightGrey outline-none focus-within:!border-lightGrey duration-300'
         />
 
-        <Button type='submit' className='!w-[231px] md:!rounded-l-none' loading={loading}>
+        <Button
+          type='submit'
+          className='md:!w-[231px] md:!rounded-l-none !w-full'
+          loading={loading}
+        >
           Subscribe
         </Button>
       </form>
