@@ -2,6 +2,7 @@
 // import gsap from 'gsap';
 import AnnouncementSection from '@/components/homepage/AnnouncementSection';
 import DevotionalSection from '@/components/homepage/DevotionalSection';
+import DirectionSection from '@/components/homepage/DirectionSection';
 import DownloadAppSection from '@/components/homepage/DownloadAppSection';
 import EventSection from '@/components/homepage/EventSection';
 import HeroSection from '@/components/homepage/HeroSection';
@@ -54,6 +55,7 @@ export default function Home() {
       <DownloadAppSection />
       <EventSection />
       <AnnouncementSection />
+      <DirectionSection />
     </AppLayout>
   );
 }

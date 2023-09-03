@@ -32,3 +32,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.direction-bg {
+  background-image: url(../assets/backgrounds/direction.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
