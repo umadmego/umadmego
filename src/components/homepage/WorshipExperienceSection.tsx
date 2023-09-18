@@ -56,7 +56,7 @@ const WorshipExperienceSection = () => {
             </div>
           ))
         ) : (
-          <span>No video found</span>
+          <p>No video found</p>
         )}
       </div>
     </section>
