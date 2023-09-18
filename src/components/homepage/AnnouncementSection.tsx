@@ -56,7 +56,7 @@ const AnnouncementSection = () => {
             />
           ))
         ) : (
-          <>No announcement found </>
+          <p>No announcement found </p>
         )}
       </div>
     </section>

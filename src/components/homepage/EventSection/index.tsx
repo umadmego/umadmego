@@ -44,7 +44,7 @@ const EventSection = () => {
         ) : data && data.length ? (
           data.map((item) => <EventCard key={item.id} event={item} />)
         ) : (
-          <>No event found </>
+          <p>No event found </p>
         )}
       </div>
     </section>
