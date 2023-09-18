@@ -46,3 +46,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.about-header-bg {
+  background-image: url(../assets/backgrounds/about-header.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
