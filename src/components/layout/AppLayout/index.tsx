@@ -10,7 +10,7 @@ function AppLayout({ children }: { children: React.ReactNode }) {
     <>
       <Navbar />
       <MobileDownloadBar />
-      <main className='bg-[FFF5F2]'>{children}</main>
+      <main className='bg-[#FFF5F2]'>{children}</main>
       <ToastContainer
         style={{
           fontSize: 16,
