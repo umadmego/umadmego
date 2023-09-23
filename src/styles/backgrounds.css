@@ -53,3 +53,11 @@
   background-size: cover;
   background-position: center;
 }
+
+.faith-bg {
+  background-image: url(../assets/backgrounds/faith.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}

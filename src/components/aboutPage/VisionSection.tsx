@@ -5,9 +5,9 @@ import Image from 'next/image';
 const VisionSection = () => {
   return (
     <section id='vision' className='px-primary mt-[118px]'>
-      <p className='text-center font-bold text-primary text-[30px] md:text-[35px] lg:text-[40px] mb-[51px] font-secondary'>
+      <h2 className='text-center font-bold text-primary text-[30px] md:text-[35px] lg:text-[40px] mb-[51px] font-secondary'>
         Vision and Purpose
-      </p>
+      </h2>
 
       <div className='flex flex-col gap-8 md:flex-row items-center md:items-start text-center md:text-left'>
         <div className='-mt-10 md:flex-[50%]'>
