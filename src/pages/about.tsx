@@ -1,5 +1,6 @@
 import AboutHeader from '@/components/aboutPage/AboutHeader';
 import HistorySection from '@/components/aboutPage/HistorySection';
+import VisionSection from '@/components/aboutPage/VisionSection';
 import AppLayout from '@/components/layout/AppLayout';
 import React from 'react';
 
@@ -8,6 +9,7 @@ function About() {
     <AppLayout>
       <AboutHeader />
       <HistorySection />
+      <VisionSection />
     </AppLayout>
   );
 }

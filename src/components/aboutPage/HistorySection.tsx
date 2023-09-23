@@ -4,7 +4,7 @@ const HistorySection = () => {
   return (
     <section id='history' className='px-primary mt-[107px]'>
       <h2 className='font-bold text-xl md:text-2xl text-center mb-5'>OUR HISTORY</h2>
-      <p className='text-center font-bold text-primary text-[30px] md:text-[35px] lg:text-[40px] mb-10'>
+      <p className='text-center font-bold text-primary text-[30px] md:text-[35px] lg:text-[40px] mb-10 font-secondary'>
         The Father&apos;s House Church
       </p>
       <div className='flex flex-col gap-5 md:text-lg w-full'>
