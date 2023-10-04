@@ -15,6 +15,21 @@ export const faithDeclarations: FaithType[] = [
       'God the Father, the Son and the Holy Spirit manifest themselves as separate but yet distinct personalities and in perfect unexplainable or mysterious unity and harmony. LK.3:22.',
   },
   {
+    title: 'GOD',
+    description:
+      'The unity of the Godhead eternally existing as one officiating in three offices – Father, Son and Holy Spirit. (Deut.6:4; MK.12:22; Rm.1:20; John 10:30, Isa.9:6, II Tim.3:16).',
+  },
+  {
+    title: 'JESUS CHRIST',
+    description:
+      'The true God and true Man. He lives a perfect and sinless life. He died on the cross, a sacrifice for our sins according to the Holy Scripture. He rose from the dead and ascended into heaven where He is sitting at the right hand of the Majesty on High.',
+  },
+  {
+    title: 'THE HOLY SPIRIT',
+    description:
+      'The infallible interpreter of the infallible word, who regenerates, indwells every believer, baptizes and seals all true believers in Christ and fills those yielded to God. His ministry is to glorify Christ in the life of the believers. (Jn.7:38-39;16:7; Acts 7:35)',
+  },
+  {
     title: 'MAN',
     description:
       'Was created in the image and likeness of God, but in Adam all mankind fell into sin with the result that all men are sinners, helpless, and sinful in themselves, apart from the grace of God. (Gen.1:27; Rm.5:12; Eph.2:1).',
@@ -42,7 +57,7 @@ export const faithDeclarations: FaithType[] = [
   {
     title: 'SANCTIFICATION',
     description:
-      'There are three aspects to sanctification viz: POSITIONAL SANCTIFICATION: Possessed by every believer from the moment of his conversion regardless of his spiritual condition. This concerns his spiritual placement and position with God and his state or perfect standing in holiness. (Acts 20:22; ICor.1:2; 6:11).',
+      'There are three aspects to sanctification viz: POSITIONAL SANCTIFICATION: Possessed by every believer from the moment of his conversion regardless of his spiritual condition. This concerns his spiritual placement and position with God and his state or perfect standing in holiness. (Acts 20:22; ICor.1:2; 6:11). PROGRESSIVE SANCTIFICATION: The daily growth in grace becoming in practice more and more set apart for God’s use (Jh.17:17; Eph.5:26; IPet.1:16). ULTIMATE SANCTIFICATION: This is that aspect which is related to our final perfection, attained only when we are fully and completely set apart to God in Heaven. He will remove us from the presence of sin and present us faultless before the presence of His Glory. (IThess.5:23-25; Phil.3:20-21; IJh.3:2-3)',
   },
   {
     title: 'PERSONAL RETURN OF CHRIST',
@@ -52,7 +67,7 @@ export const faithDeclarations: FaithType[] = [
   {
     title: 'HEAVEN AND HELL',
     description:
-      'That the souls of those who trusted in the Lord Jesus Christ for salvation at death immediately pass into His presence and there remain in conscious bliss until the resurrection of the body at His coming, when soul and body will be reunited and shall be with Him forever in glory. (Lk.23:43; 2Cor.5:8; IThess.4:15-18; Phili.1:23; Lk.16:22-25).',
+      'That the souls of those who trusted in the Lord Jesus Christ for salvation at death immediately pass into His presence and there remain in conscious bliss until the resurrection of the body at His coming, when soul and body will be reunited and shall be with Him forever in glory. (Lk.23:43; 2Cor.5:8; IThess.4:15-18; Phili.1:23; Lk.16:22-25). Hell is a place of eternal punishment for the devil, his cohorts and humans that refused the lordship of Jesus Christ as the Saviour. Isa 5:14, Matt 5: 10,28, Luke 10:15, James 3:5, II peter 2:4, Rev 20:13-14.',
   },
   {
     title: 'THE CHURCH',
@@ -62,7 +77,17 @@ export const faithDeclarations: FaithType[] = [
   {
     title: 'ORDINANCES OF THE CHURCH',
     description:
-      'We believe in the ordinance of the Church as established by the Lord Jesus Christ. These are: The Lord’s Supper and Water Baptism that is to be observed by the Church during this present age. They are, however, to be regarded as means of salvation. (Acts 3:39; 8:12; ICor.11:23-26). WATER BAPTISM: By immersion in water only for born again believers and was instituted for the purpose of outward testimony',
+      'We believe in the ordinance of the Church as established by the Lord Jesus Christ. These are: The Lord’s Supper and Water Baptism that is to be observed by the Church during this present age. They are, however, to be regarded as means of salvation. (Acts 3:39; 8:12; ICor.11:23-26).',
+  },
+  {
+    title: 'WATER BAPTISM',
+    description:
+      'By immersion in water only for born again believers and was instituted for the purpose of outward testimony (Mk.16:15; Matt.3:13-17; Acts 8:38-39; Rm.6:3-4)',
+  },
+  {
+    title: 'THE HOLY COMMUNION',
+    description:
+      'It was instituted by Christ and commanded to be followed by the Church. It is a Christian’s duty and privilege to remember the Lord’s death until He comes. (Matt.26:26-28; ICor.10:14-17; ICor.11:23-25)',
   },
   {
     title: 'CHRISTIAN LIFE',
@@ -72,6 +97,6 @@ export const faithDeclarations: FaithType[] = [
   {
     title: 'MARRIAGE',
     description:
-      'We believe that marriage is the most honourable relationship, institution and covenant a person could enter into. Its high regard for the laws of God, its benefits and obligations are fully and clearly set forth in the Holy Scripture. It is so Holy that Christ compares it with the mystical union of Himself and the Church. (Heb.13:14; Eph.5:22-23).',
+      'We believe that marriage is the most honourable relationship, institution and covenant a person could enter into. Its high regard for the laws of God, its benefits and obligations are fully and clearly set forth in the Holy Scripture. It is so Holy that Christ compares it with the mystical union of Himself and the Church. (Heb.13:14; Eph.5:22-23). Also, we must take precaution and care to see it also as a civil institution. For it to be legal, it must be performed by a recognized licensed or an ordained minister of God.',
   },
 ];
