@@ -41,18 +41,24 @@ body {
 
 .inputContainer>* input,
 textarea {
-  padding: 12px;
+  padding: 20px;
   font-size: 1.02038125rem;
   font-family: 'Poppins', sans-serif;
-  border: 1px solid #bcbdc1;
-  border-radius: 2.04px;
+  border: 1px solid #0D57BE;
+  border-radius: 5px;
   width: 100%;
   color: #000
 }
 
+.inputContainer>* input:focus,
+textarea {
+  border: 1px solid #002F72 !important;
+  outline: 1px solid #002F72 !important;
+}
+
 .inputContainer>* input::placeholder,
 textarea::placeholder {
-  color: #acadb4;
+  color: #002F72;
 }
 
 .inputError {

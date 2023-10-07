@@ -6,6 +6,7 @@ import { EventType } from '@/types/types';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import BrandImage from '@/assets/brand/logo.png';
+import Link from 'next/link';
 
 const EventList = () => {
   const [page, setPage] = useState(1);
@@ -37,7 +38,11 @@ const EventList = () => {
           <LoadingIndicator />
         ) : events && events.length > 0 ? (
           events.map((item) => (
-            <div key={item.id} className='w-full flex flex-col'>
+            <Link
+              key={item.id}
+              className='w-full flex flex-col'
+              href={'/events/' + item.id}
+            >
               <Image
                 src={item.poster || BrandImage}
                 alt='Event'
@@ -51,14 +56,14 @@ const EventList = () => {
               <p className='text-primary font-bold text-[26px] font-secondary mb-[10px]'>
                 {item.name}
               </p>
-              <p className='text-xl mb-4'>{new Date(item.date).toDateString()}</p>
+              <p className='mb-4'>{new Date(item.date).toDateString()}</p>
               <p
-                className='text-2xl'
+                className='text-sm'
                 dangerouslySetInnerHTML={{
                   __html: item.description,
                 }}
               />
-            </div>
+            </Link>
           ))
         ) : (
           <p className='text-center'>No event found</p>

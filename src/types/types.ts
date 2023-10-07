@@ -115,14 +115,16 @@ export type EventType = {
     type: string;
     options?: string;
   }[];
-  gallery: {
+  gallery: EventGalleryType;
+};
+
+export type EventGalleryType ={
     id: number;
     imageURL: string;
     event_id: number;
     createdAt: Date;
     updatedAt: Date;
-  }[];
-};
+  }[]
 
 export type AdminType = {
   id: string;
