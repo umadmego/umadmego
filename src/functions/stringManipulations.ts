@@ -25,3 +25,7 @@ export const getMonthString = (date: Date) => {
   ];
   return monthStrings[new Date(date).getMonth()];
 };
+
+export const capitalize = (phrase: string) => {
+  return phrase.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
+};

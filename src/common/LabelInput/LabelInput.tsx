@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { HidePasswordIcon, ShowPasswordIcon } from './PasswordIcons';
 
 interface Props {
-  label: string;
+  label?: string;
   formik?: any;
   type?: string;
   name: string;
@@ -53,14 +53,16 @@ function LabelInput({
     <div className={'inputContainer ' + className}>
       {useFormik ? (
         <>
-          <label
-            htmlFor={name}
-            className={`dark:text-white ${
-              formik.touched[name] && formik.errors[name] ? 'errorText' : ''
-            }`}
-          >
-            {label}
-          </label>
+          {label && (
+            <label
+              htmlFor={name}
+              className={`dark:text-white ${
+                formik.touched[name] && formik.errors[name] ? 'errorText' : ''
+              }`}
+            >
+              {label}
+            </label>
+          )}
           {hint && <div className='font-light text-xs italic text-gray-400'>{hint}</div>}
           <div className='relative'>
             <input
