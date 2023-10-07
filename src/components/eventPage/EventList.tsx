@@ -41,7 +41,7 @@ const EventList = () => {
             <Link
               key={item.id}
               className='w-full flex flex-col'
-              href={'/events/' + item.id}
+              href={'/events/details?id=' + item.id}
             >
               <Image
                 src={item.poster || BrandImage}

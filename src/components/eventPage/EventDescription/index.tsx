@@ -27,8 +27,10 @@ const EventDescription = () => {
   };
 
   React.useEffect(() => {
-    getData();
-  }, []);
+    if (id) {
+      getData();
+    }
+  }, [id]);
 
   const shouldAllowRegistration = () => {
     let allow = true;
