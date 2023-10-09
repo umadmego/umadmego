@@ -21,8 +21,8 @@ const links: Link[] = [
     destination: '/events',
   },
   {
-    title: 'Resources',
-    destination: '/resources',
+    title: 'Devotional',
+    destination: '/devotional',
   },
   {
     title: 'Find A Church',
