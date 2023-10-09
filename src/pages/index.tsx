@@ -56,8 +56,6 @@ export default function Home() {
       <DownloadAppSection />
       <EventSection />
       <AnnouncementSection />
-      <DirectionSection />
-      <SubscribeSection />
     </AppLayout>
   );
 }

@@ -16,8 +16,6 @@ function About() {
       <VisionSection />
       <StatementOfFaithSection />
       <PastorsSection />
-      <DirectionSection />
-      <SubscribeSection />
     </AppLayout>
   );
 }

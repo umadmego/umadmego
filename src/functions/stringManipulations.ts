@@ -27,5 +27,8 @@ export const getMonthString = (date: Date) => {
 };
 
 export const capitalize = (phrase: string) => {
-  return phrase.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
+  return phrase.replace(
+    /(^\w|\s\w)(\S*)/g,
+    (_, m1, m2) => m1.toUpperCase() + m2.toLowerCase()
+  );
 };
