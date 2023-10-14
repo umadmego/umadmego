@@ -75,3 +75,24 @@
   background-size: cover;
   background-position: center;
 }
+
+.resources-header-bg {
+  background-image: url(../assets/backgrounds/resources.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.podcast-bg {
+  background-image: url(../assets/backgrounds/podcast.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.testimony-content-bg {
+  background-image: url(../assets/images/resources/testimony/content-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
