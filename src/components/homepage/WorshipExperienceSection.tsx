@@ -5,14 +5,16 @@ import PlayIcon from '@/assets/svgs/home/play-icon.svg';
 import Image from 'next/image';
 import { getYoutubeLink } from '@/functions/stringManipulations';
 import { useDraggable } from 'react-use-draggable-scroll';
+import Link from 'next/link';
+import Button from '@/common/Button';
 
-const WorshipExperienceSection = () => {
+const WorshipExperienceSection = ({ showButton = false }: { showButton?: boolean }) => {
   const { videos, loading } = useAppSelector((state) => state.youtubeVideos);
   const ref = React.useRef<any>();
   const { events } = useDraggable(ref);
 
   return (
-    <section id='worship-experience' className='bg-[#FFF2EE] px-primary py-[93px]'>
+    <section id='worship-experience' className='px-primary py-[93px]'>
       <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center mb-[83px]'>
         Recent Worship Experience
       </h2>
@@ -59,6 +61,13 @@ const WorshipExperienceSection = () => {
           <p>No video found</p>
         )}
       </div>
+      {showButton && (
+        <div className='flex w-full justify-center'>
+          <Link href='/messages'>
+            <Button className='!w-[280px] mt-[59px]'>Recent Messages</Button>
+          </Link>
+        </div>
+      )}
     </section>
   );
 };
