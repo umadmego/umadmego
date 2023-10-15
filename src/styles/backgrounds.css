@@ -96,3 +96,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.messages-header-bg {
+  background-image: url(../assets/backgrounds/messages.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
