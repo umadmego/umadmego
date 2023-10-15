@@ -1,12 +1,12 @@
 import { userSlice } from './slices/user';
 import { configureStore } from '@reduxjs/toolkit';
-import { loadingIndicatorSlice } from './slices/loadingIndicator';
+import { loadingSlice } from './slices/loadingSlice';
 import { mobileBarSlice } from './slices/mobileBar';
 import { youtubeVideoSlice } from './slices/youtubeVideos';
 
 export const store = configureStore({
   reducer: {
-    [loadingIndicatorSlice.name]: loadingIndicatorSlice.reducer,
+    [loadingSlice.name]: loadingSlice.reducer,
     [mobileBarSlice.name]: mobileBarSlice.reducer,
     [userSlice.name]: userSlice.reducer,
     [youtubeVideoSlice.name]: youtubeVideoSlice.reducer,
