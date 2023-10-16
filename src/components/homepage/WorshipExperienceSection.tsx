@@ -15,7 +15,7 @@ const WorshipExperienceSection = ({ showButton = false }: { showButton?: boolean
 
   return (
     <section id='worship-experience' className='px-primary py-[93px]'>
-      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center mb-[83px]'>
+      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center font-secondary  mb-[83px]'>
         Recent Worship Experience
       </h2>
       <div

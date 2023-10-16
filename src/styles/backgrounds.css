@@ -103,3 +103,24 @@
   background-size: cover;
   background-position: center;
 }
+
+.giving-header-bg {
+  background-image: url(../assets/backgrounds/giving.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.giving-bg {
+  background-image: url(../assets/backgrounds/giving-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.location-header-bg {
+  background-image: url(../assets/backgrounds/locations.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
