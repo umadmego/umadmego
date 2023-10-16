@@ -32,3 +32,7 @@ export const capitalize = (phrase: string) => {
     (_, m1, m2) => m1.toUpperCase() + m2.toLowerCase()
   );
 };
+
+export const removeSpacesFromString = (item: string) => {
+  return item.replace(/\s/g, '');
+};
