@@ -8,7 +8,7 @@ import { sendFeedback } from '@/functions/feedback';
 const OfflineChannels = () => {
   return (
     <div id='offline-giving-channels' className='px-primary py-[100px]'>
-      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center mb-3'>
+      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center font-secondary  mb-3'>
         Offline Giving Channels
       </h2>
       <p className='text-lg lg:text-2xl text-center font-medium mb-[113px]'>
@@ -41,7 +41,7 @@ const OfflineChannels = () => {
                 style={{
                   color: item.color,
                 }}
-                className='font-bold text-[30px] lg:text-[40px] group-hover:!text-white'
+                className='font-bold text-[30px] lg:text-[40px] group-hover:!text-white font-secondary'
               >
                 {item.accountNumber}
               </p>

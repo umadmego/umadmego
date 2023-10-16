@@ -10,7 +10,7 @@ const WorshipSection = () => {
 
   return (
     <section id='worship' className='message-bg px-primary py-[93px]'>
-      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center mb-[11px]'>
+      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center font-secondary  mb-[11px]'>
         Our Last Worship Experience
       </h2>
       {loading ? (

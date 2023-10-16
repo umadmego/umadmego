@@ -10,7 +10,7 @@ const LatestMessage = () => {
 
   return (
     <section id='worship' className='px-primary py-[93px] mb-[78px]'>
-      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center mb-[54px]'>
+      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center font-secondary  mb-[54px]'>
         Our Last Service
       </h2>
       {loading ? (

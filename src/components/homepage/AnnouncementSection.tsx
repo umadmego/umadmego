@@ -30,7 +30,7 @@ const AnnouncementSection = () => {
   }, []);
   return (
     <section id='announcement' className='px-primary py-[100px]'>
-      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center mb-[11px]'>
+      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center font-secondary  mb-[11px]'>
         Announcement
       </h2>
       <p className='text-lg lg:text-2xl text-center font-medium mb-[56px]'>
