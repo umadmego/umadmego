@@ -131,3 +131,17 @@
   background-size: cover;
   background-position: center;
 }
+
+.contact-header-bg {
+  background-image: url(../assets/backgrounds/contact.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback-header-bg {
+  background-image: url(../assets/backgrounds/feedback.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
