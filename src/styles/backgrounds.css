@@ -124,3 +124,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.testimony-header-bg {
+  background-image: url(../assets/backgrounds/testimony.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

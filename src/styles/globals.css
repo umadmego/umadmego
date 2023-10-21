@@ -29,6 +29,7 @@ body {
 .inputContainer>label {
   font-size: 1.02038125rem;
   font-weight: 400;
+  color: #002F72;
 }
 
 .formContainer>h2 {
@@ -51,14 +52,15 @@ textarea {
 }
 
 .inputContainer>* input:focus,
-textarea {
+textarea:focus {
   border: 1px solid #002F72 !important;
   outline: 1px solid #002F72 !important;
 }
 
 .inputContainer>* input::placeholder,
 textarea::placeholder {
-  color: #002F72;
+  color: #CFCFCF;
+  font-style: italic;
 }
 
 .inputError {

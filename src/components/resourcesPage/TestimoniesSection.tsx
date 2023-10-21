@@ -13,7 +13,7 @@ const TestimoniesSection = () => {
             <h2 className='text-white text-[35px] md:text-[48px] lg:text-[60px] font-bold mb-[29px]'>
               Testimonies help us to count our blessings
             </h2>
-            <Link href='/devotional'>
+            <Link href='/testimony'>
               <Button className='!w-[280px] !max-w-full !bg-white !text-secondary'>
                 Testimonies
               </Button>
