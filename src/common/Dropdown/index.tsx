@@ -13,6 +13,7 @@ function Dropdown({
   onChange,
   showError,
   error,
+  labelClass,
   ...props
 }: {
   containerStyle?: React.CSSProperties;
@@ -27,6 +28,7 @@ function Dropdown({
   useFormik?: boolean;
   onChange?: (e: any) => void;
   className?: string;
+  labelClass?: string;
   [x: string]: any;
 }) {
   return (
@@ -36,9 +38,11 @@ function Dropdown({
           {label && (
             <label
               htmlFor={name}
-              className={`dark:text-white ${
-                formik.touched[name] && formik.errors[name] ? 'errorText' : ''
-              }`}
+              className={
+                `dark:text-white ${
+                  formik.touched[name] && formik.errors[name] ? 'errorText' : ''
+                } ` + labelClass
+              }
             >
               {label}
             </label>
@@ -65,11 +69,12 @@ function Dropdown({
               }),
               control: (provided, state) => ({
                 ...provided,
-                paddingBlock: 6,
+                paddingBlock: 8,
               }),
               placeholder: (provided) => ({
                 ...provided,
-                color: '#999',
+                color: '#CFCFCF',
+                fontStyle: 'italic',
               }),
             }}
             isClearable
@@ -88,7 +93,7 @@ function Dropdown({
         <>
           <label
             htmlFor={name}
-            className={`dark:text-white ${showError ? 'errorText' : ''}`}
+            className={`dark:text-white ${showError ? 'errorText' : ''} ` + labelClass}
           >
             {label}
           </label>
@@ -109,7 +114,7 @@ function Dropdown({
               }),
               control: (provided, state) => ({
                 ...provided,
-                paddingBlock: 6,
+                paddingBlock: 8,
               }),
               placeholder: (provided) => ({
                 ...provided,

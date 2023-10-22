@@ -23,7 +23,7 @@ const PodcastSection = () => {
           you believe and are justified, and it is with your mouth that you profess your
           faith and are saved.”
         </p>
-        <Link href='/devotional'>
+        <Link href='/podcast'>
           <Button className='!w-[280px] !max-w-full !bg-white !text-secondary'>
             Listen to Podcasts
           </Button>

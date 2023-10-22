@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import styles from './styles.module.css';
 import LoadingIndicator from '../LoadingIndicator/LoadingIndicator';
 
@@ -16,7 +16,7 @@ function Button({
   style?: React.CSSProperties;
   loading?: boolean;
   children: React.ReactNode;
-}) {
+} & ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
       type={type}
