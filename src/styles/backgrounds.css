@@ -145,3 +145,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.podcast-header-bg {
+  background-image: url(../assets/backgrounds/podcast-header.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

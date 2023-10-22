@@ -15,7 +15,7 @@ const LivestreamChannelsSection = () => {
         {streamingChannels.map((channel) => (
           <a
             key={channel.link}
-            className='flex items-center justify-center w-full rounded-[10px] p-7 shadow-md'
+            className='flex items-center justify-center w-full rounded-[10px] p-7 shadow-md bg-white'
             href={channel.link}
             target='_blank'
           >
