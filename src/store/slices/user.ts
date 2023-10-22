@@ -1,7 +1,7 @@
-import { sendFeedback } from './../../functions/feedback';
-import { createSlice } from '@reduxjs/toolkit';
 import { UserType } from '@/types/types';
-import { SESSION_NAME } from '@/functions/environmentVariables';
+import { sendFeedback } from './../../functions/feedback';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { removeSessionDetails, storeSessionDetails } from '@/functions/userSession';
 
 // Define a type for the slice state
 
@@ -15,18 +15,24 @@ export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    updateUser(state, action) {
+    updateUser(state, action: PayloadAction<{ user: UserType }>) {
       state.user = action.payload.user;
+      storeSessionDetails(action.payload.user);
+    },
+
+    getUser(state) {
+      const storedUser = JSON.parse(localStorage.getItem('user') || '');
+      state = storedUser || null;
     },
 
     signOut(state) {
       state.user = null;
-      localStorage.removeItem(SESSION_NAME!);
+      removeSessionDetails();
       sendFeedback('Logout successful', 'success');
     },
   },
 });
 
-export const { updateUser, signOut } = userSlice.actions;
+export const { updateUser, getUser, signOut } = userSlice.actions;
 
 export default userSlice.reducer;

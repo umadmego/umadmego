@@ -6,12 +6,14 @@ import type { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
 import 'react-toastify/dist/ReactToastify.css'; // toast css
 import { ToastContainer } from 'react-toastify';
+import GetUserSession from '@/components/layout/GetUserSession';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <HeadElement />
       <Component {...pageProps} />
+      <GetUserSession />
       <ToastContainer
         style={{
           fontSize: 16,

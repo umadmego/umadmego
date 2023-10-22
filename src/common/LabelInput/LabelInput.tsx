@@ -2,83 +2,72 @@ import { useState } from 'react';
 import { HidePasswordIcon, ShowPasswordIcon } from './PasswordIcons';
 
 interface Props {
-  label?: string;
   formik?: any;
-  type?: string;
   name: string;
   className?: string;
-  placeholder?: string;
-  hint?: string;
   useFormik?: boolean;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  value?: string | number;
   showError?: boolean;
   error?: string;
-  required?: boolean;
-  [x: string]: any;
+  labelClass?: string;
+  blurFunction?: () => void;
 }
 
 function LabelInput({
-  label = '',
-  type = 'text',
   formik,
   name,
   className = '',
-  placeholder,
-  hint,
   useFormik = true,
-  onChange,
-  value,
   showError = false,
   error,
-  required,
+  blurFunction,
+  labelClass,
   ...rest
-}: Props) {
+}: Props & React.HTMLProps<HTMLInputElement>) {
   const [passwordShown, setPasswordShown] = useState(false);
 
   const togglePasswordReveal = () => {
-    const element: any = document.getElementById(name);
-    if (element) {
-      if (element.type === 'password') {
-        element.type = 'text';
-        setPasswordShown(true);
-      } else {
-        element.type = 'password';
-        setPasswordShown(false);
-      }
-    }
+    setPasswordShown(!passwordShown);
   };
 
   return (
     <div className={'inputContainer ' + className}>
       {useFormik ? (
         <>
-          {label && (
+          {rest.label && (
             <label
               htmlFor={name}
-              className={`dark:text-white ${
-                formik.touched[name] && formik.errors[name] ? 'errorText' : ''
-              }`}
+              className={
+                ` ${formik.touched[name] && formik.errors[name] ? 'errorText' : ''} ` +
+                labelClass
+              }
             >
-              {label}
+              {rest.label}
+
+              {rest.required && <span>*</span>}
             </label>
           )}
-          {hint && <div className='font-light text-xs italic text-gray-400'>{hint}</div>}
           <div className='relative'>
             <input
-              type={type}
-              name={name}
+              {...rest}
               id={name}
-              placeholder={placeholder}
               value={formik.values[name]}
               onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
+              onBlur={(e) => {
+                formik.handleBlur(e);
+                blurFunction?.();
+              }}
+              type={passwordShown ? 'text' : rest.type}
               className={formik.touched[name] && formik.errors[name] ? 'inputError' : ''}
-              {...rest}
             />
-            {type === 'password' && (
+            {rest.type === 'password' && (
               <div
-                className='absolute bottom-3 right-3 cursor-pointer'
+                className='cursor-pointer flex items-center'
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  bottom: 0,
+                  right: 12,
+                }}
                 onClick={togglePasswordReveal}
               >
                 {passwordShown ? <HidePasswordIcon /> : <ShowPasswordIcon />}
@@ -92,28 +81,26 @@ function LabelInput({
         </>
       ) : (
         <>
-          <label
-            htmlFor={name}
-            className={`dark:text-white ${showError ? 'errorText' : ''}`}
-          >
-            {label}
-          </label>
-          {hint && <div className='font-light text-xs italic text-gray-400'>{hint}</div>}
+          {rest.label && (
+            <label
+              htmlFor={name}
+              className={`${showError ? 'errorText' : ''} ` + labelClass}
+            >
+              {rest.label}
+            </label>
+          )}
           <div className='relative'>
-            <input
-              type={type}
-              name={name}
-              id={name}
-              placeholder={placeholder}
-              value={value}
-              onChange={onChange}
-              required={required}
-              {...rest}
-            />
+            <input {...rest} id={name} type={passwordShown ? 'text' : rest.type} />
 
-            {type === 'password' && (
+            {rest.type === 'password' && (
               <div
-                className='absolute bottom-3 right-3 cursor-pointer'
+                className='cursor-pointer flex items-center'
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  bottom: 0,
+                  right: 12,
+                }}
                 onClick={togglePasswordReveal}
               >
                 {passwordShown ? <HidePasswordIcon /> : <ShowPasswordIcon />}

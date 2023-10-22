@@ -152,3 +152,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.auth-header-bg {
+  background-image: url(../assets/backgrounds/auth-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

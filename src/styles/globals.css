@@ -42,7 +42,8 @@ body {
 
 .inputContainer>* input,
 textarea {
-  padding: 20px;
+  padding-block: 16px;
+  padding-inline: 12px;
   font-size: 1.02038125rem;
   font-family: 'Poppins', sans-serif;
   border: 1px solid #0D57BE;
