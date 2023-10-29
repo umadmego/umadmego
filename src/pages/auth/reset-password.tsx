@@ -14,7 +14,7 @@ import * as yup from 'yup';
 const ResetPasswordPage = () => {
   const router = useRouter();
   const dispatch = useAppDispatch();
-  const { email } = router.query;
+  const { email, verificationCode } = router.query;
 
   interface FormValues {
     email: string | undefined;
@@ -26,10 +26,10 @@ const ResetPasswordPage = () => {
 
   const formik = useFormik<FormValues>({
     initialValues: {
-      email: email as string,
+      email: (email as string) || '',
       newPassword: '',
       confirmPassword: '',
-      verificationCode: '',
+      verificationCode: (verificationCode as string) || '',
       loading: false,
     },
     onSubmit: () => {

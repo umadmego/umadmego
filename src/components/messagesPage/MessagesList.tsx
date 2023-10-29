@@ -68,7 +68,10 @@ const MessagesList = () => {
             >
               <a
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(${video.snippet.thumbnails.standard?.url})`,
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(${
+                    video.snippet.thumbnails.standard?.url ||
+                    video.snippet.thumbnails.default?.url
+                  })`,
                 }}
                 href={getYoutubeLink(video.snippet.resourceId.videoId)}
                 target='_blank'
