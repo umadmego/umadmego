@@ -7,4 +7,7 @@ App was built with NextJS, Tailwind, Typescript and Redux Toolkit. Tools like Fo
 ### Church Website
 [https://tfhconline.org.ng/]
 
+#### Demo Link: 
+[https://tfh-website.netlify.app/]
+
 Feel free to download and use as a template to create the website for the church you belong to
