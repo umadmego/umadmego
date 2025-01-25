@@ -19,8 +19,8 @@ function LogoSection() {
         levando o Reino de Deus a cada canto da sua geração.
       </p>
       <p className="font-normal mt-[34px] mb-[27px] text-sm">
-        • União de Mocidade das Assembleias de Deus <br />
-        • Missão no Estado de Goiás <br />• Líderes: Pr. Fábio e Ir. Eliete
+        • União de Mocidade das Assembleias de Deus Missão no Estado de Goiás<br />
+        • Líderes: Pr. Fábio e Ir. Eliete
       </p>
     </div>
   );
