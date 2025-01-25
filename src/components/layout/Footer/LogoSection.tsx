@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import WhiteLogo from "@/assets/brand/logo-white.png";
-import PlayStore from "@/common/AppButtons/PlayStore";
 
 function LogoSection() {
   return (
@@ -23,9 +22,6 @@ function LogoSection() {
         • União de Mocidade das Assembleias de Deus <br />
         • Missão no Estado de Goiás <br />• Líderes: Pr. Fábio e Ir. Eliete
       </p>
-
-      <p className="text-warning text-sm font-bold mb-3">NOW AVAILABLE ON</p>
-      <PlayStore />
     </div>
   );
 }

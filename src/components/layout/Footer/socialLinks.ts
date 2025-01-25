@@ -1,6 +1,4 @@
-import InstagramIcon from '@/assets/svgs/social/instagram.svg';
-import FacebookIcon from '@/assets/svgs/social/facebook.svg';
-import YoutubeIcon from '@/assets/svgs/social/youtube.svg';
+import InstagramIcon from "@/assets/svgs/social/instagram.svg";
 
 interface Link {
   alt: string;
@@ -10,19 +8,9 @@ interface Link {
 
 const socialLinks: Link[] = [
   {
-    alt: 'Youtube Channel',
-    src: YoutubeIcon,
-    destination: 'https://www.youtube.com/@TFHCOnlineTv',
-  },
-  {
-    alt: 'Facebook Profile',
-    src: FacebookIcon,
-    destination: 'https://www.facebook.com/tfhcng',
-  },
-  {
-    alt: 'Instagram Profile',
+    alt: "Instagram Profile",
     src: InstagramIcon,
-    destination: 'https://www.instagram.com/tfhcng/',
+    destination: "https://www.instagram.com/umadmego/",
   },
 ];
 

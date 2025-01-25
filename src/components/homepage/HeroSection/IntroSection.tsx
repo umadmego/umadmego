@@ -4,10 +4,10 @@ import React from "react";
 function IntroSection() {
   return (
     <div className="pr-primary pl-primary flex flex-col justify-center p-5 h-full lg:flex:[45%] text-center lg:text-left mb-[94px] lg:mb-0">
-      <p className="lg:text-[42px] text-primary text-2xl font-secondary  mt-[3px]  lg:mb-[2px]">
+      <p className="lg:text-[42px] text-light text-2xl font-secondary  mt-[3px]  lg:mb-[2px]">
         Ele vem!
       </p>
-      <h1 className="text-primary text-2xl lg:text-[35px] max-w-[547px]  mb-[18px]">
+      <h1 className="text-light text-2xl lg:text-[35px] max-w-[547px]  mb-[18px]">
         <span className="font-secondary font-bold lg:text-[55px] text-[40px]">
           UMADMEGO&nbsp;
           <span className="font-secondary text-secondary font-bold lg:text-[55px] text-[40px]">

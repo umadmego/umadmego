@@ -7,7 +7,7 @@ import MobileMenu from "./MobileMenu";
 
 function Navbar() {
   return (
-    <nav className="pl-primary pr-primary h-24">
+    <nav className="bg-gray-100 pl-primary pr-primary h-24">
       <div className="flex justify-between items-center">
         <Link href="/">
           <Image
