@@ -13,9 +13,9 @@ function About() {
     <AppLayout>
       <AboutHeader />
       <HistorySection />
-      <VisionSection />
-      <StatementOfFaithSection />
-      <PastorsSection />
+      {/*<VisionSection />*/}
+      {/*<StatementOfFaithSection />*/}
+      {/*<PastorsSection />*/}
     </AppLayout>
   );
 }
