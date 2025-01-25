@@ -2,7 +2,6 @@ import Button from "@/common/Button";
 import Image from "next/image";
 import React from "react";
 import contactInfo from "./contactInfo";
-import Link from "next/link";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { signOut } from "@/store/slices/user";
 import { useRouter } from "next/router";
@@ -17,7 +16,7 @@ function ContactSection() {
   };
   return (
     <div className="flex flex-col text-white">
-      <p className="font-secondary font-semibold text-lg mb-4">Contact</p>
+      <p className="font-secondary font-semibold text-lg mb-4">Contatos</p>
       <ul className="flex flex-col gap-4">
         {contactInfo.map((info) => (
           <li key={info.text} className="flex gap-4 text-sm">
