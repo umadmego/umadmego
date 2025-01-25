@@ -1,19 +1,30 @@
-import Image from 'next/image';
-import React from 'react';
-import WhiteLogo from '@/assets/brand/logo-white.png';
-import PlayStore from '@/common/AppButtons/PlayStore';
+import Image from "next/image";
+import React from "react";
+import WhiteLogo from "@/assets/brand/logo-white.png";
+import PlayStore from "@/common/AppButtons/PlayStore";
 
 function LogoSection() {
   return (
-    <div className='text-white flex-col'>
-      <Image src={WhiteLogo} alt="The Father's House" className='h-[138px] w-auto' />
-      <p className='font-normal mt-[34px] mb-[27px] text-sm'>
-        The Father’s House strongly believes in the Missions assignment of the New
-        Testament Church and also impacting life in her immediate community through
-        provision and meeting of some basic needs of life as well as putting in place some
-        empowerment programmes and activities.
+    <div className="text-white flex-col">
+      <Image
+        src={WhiteLogo}
+        alt="The Father's House"
+        className="h-[128px] w-auto "
+      />
+      <p className="font-normal mt-[34px] text-sm">UMADMEGO 2k25 | Ele vem!</p>
+      <p className="font-normal mt-[34px] mb-[27px] text-sm">
+        "Ele vem!" – um clamor que ressoa nos corações dos jovens que estão se
+        preparando para um grande movimento de fé, avivamento e transformação. A
+        UMADMEGO 2k25 vai além de um congresso: é um chamado urgente para os
+        jovens de Goiás se posicionarem como verdadeiros agentes de mudança,
+        levando o Reino de Deus a cada canto da sua geração.
       </p>
-      <p className='text-warning text-sm font-bold mb-3'>NOW AVAILABLE ON</p>
+      <p className="font-normal mt-[34px] mb-[27px] text-sm">
+        • União de Mocidade das Assembleias de Deus <br />
+        • Missão no Estado de Goiás <br />• Líderes: Pr. Fábio e Ir. Eliete
+      </p>
+
+      <p className="text-warning text-sm font-bold mb-3">NOW AVAILABLE ON</p>
       <PlayStore />
     </div>
   );
