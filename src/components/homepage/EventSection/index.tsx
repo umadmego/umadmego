@@ -29,10 +29,10 @@ const EventSection = () => {
   return (
     <section id='events' className='event-bg px-primary pt-[90px] pb-[178px]'>
       <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center font-secondary  mb-[11px]'>
-        Our Upcoming Events
+        Próximos eventos
       </h2>
       <p className='text-lg lg:text-2xl text-center font-medium mb-[56px]'>
-        Join us to celebrate our scheduled events
+
       </p>
       <div
         className='flex gap-[35px] overflow-x-auto max-w-full no-scroll-bar'

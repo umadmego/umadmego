@@ -3,7 +3,6 @@
 import AnnouncementSection from "@/components/homepage/AnnouncementSection";
 import DevotionalSection from "@/components/homepage/DevotionalSection";
 import DirectionSection from "@/components/homepage/DirectionSection";
-import DownloadAppSection from "@/components/homepage/DownloadAppSection";
 import EventSection from "@/components/homepage/EventSection";
 import HeroSection from "@/components/homepage/HeroSection";
 import LinkSection from "@/components/homepage/LinkSection";
@@ -21,6 +20,7 @@ import { useAppDispatch } from "@/store/hooks";
 import { setVideoLoading, setVideos } from "@/store/slices/youtubeVideos";
 import axios from "axios";
 import { useEffect } from "react";
+import StoreSection from "@/components/homepage/StoreSection";
 
 export default function Home() {
   const dispatch = useAppDispatch();
@@ -51,7 +51,14 @@ export default function Home() {
   return (
     <AppLayout>
       <HeroSection />
-      <WelcomeSection />
+      {/*<WelcomeSection />*/}
+      {/*<LinkSection />*/}
+      {/*<DevotionalSection />*/}
+      {/*<WorshipSection />*/}
+      {/*<WorshipExperienceSection />*/}
+      <StoreSection />
+      <EventSection />
+      {/*<AnnouncementSection />*/}
     </AppLayout>
   );
 }

@@ -7,7 +7,7 @@ function LogoSection() {
     <div className="text-white flex-col">
       <Image
         src={WhiteLogo}
-        alt="The Father's House"
+        alt="UMADMEGO"
         className="h-[128px] w-auto "
       />
       <p className="font-normal mt-[34px] text-sm">UMADMEGO 2k25 | Ele vem!</p>
