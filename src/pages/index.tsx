@@ -24,29 +24,29 @@ import StoreSection from "@/components/homepage/StoreSection";
 
 export default function Home() {
   const dispatch = useAppDispatch();
-  const getYoutubeChannelVideos = async () => {
-    dispatch(setVideoLoading(true));
-    try {
-      const response = await axios.get(
-        `https://www.googleapis.com/youtube/v3/playlistItems?key=${YOUTUBE_API_KEY}&part=snippet&playlistId=${YOUTUBE_UPLOAD_KEY}&maxResults=10`
-      );
-      dispatch(
-        setVideos({
-          videos: response.data.items,
-          nextPageToken: response.data.nextPageToken,
-          prevPageToken: response.data.prevPageToken,
-        })
-      );
-    } catch (error) {
-      sendCatchFeedback(error);
-    } finally {
-      dispatch(setVideoLoading(false));
-    }
-  };
-
-  useEffect(() => {
-    getYoutubeChannelVideos();
-  }, []);
+  // const getYoutubeChannelVideos = async () => {
+  //   dispatch(setVideoLoading(true));
+  //   try {
+  //     const response = await axios.get(
+  //       `https://www.googleapis.com/youtube/v3/playlistItems?key=${YOUTUBE_API_KEY}&part=snippet&playlistId=${YOUTUBE_UPLOAD_KEY}&maxResults=10`
+  //     );
+  //     dispatch(
+  //       setVideos({
+  //         videos: response.data.items,
+  //         nextPageToken: response.data.nextPageToken,
+  //         prevPageToken: response.data.prevPageToken,
+  //       })
+  //     );
+  //   } catch (error) {
+  //     sendCatchFeedback(error);
+  //   } finally {
+  //     dispatch(setVideoLoading(false));
+  //   }
+  // };
+  //
+  // useEffect(() => {
+  //   getYoutubeChannelVideos();
+  // }, []);
 
   return (
     <AppLayout>
