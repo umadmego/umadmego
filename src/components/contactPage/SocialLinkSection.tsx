@@ -9,7 +9,8 @@ const SocialLinkSection = () => {
         Entre em contato
       </h2>
       <p className='text-lg lg:text-2xl text-center font-medium mb-[59px]'>
-        Esperamos que você tenha uma ótima experiência enquanto adoramos juntos. Estamos ansiosos para conhecer mais de você!
+          Esperamos que você tenha uma experiência incrível enquanto adoramos juntos. <br/>
+          Será um prazer conhecer mais sobre você! Siga-nos nas redes sociais abaixo e fique conectado conosco.
       </p>
       <div className='flex justify-center items-center gap-[46px]'>
         {socialLinks.map((link) => (

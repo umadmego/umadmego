@@ -12,20 +12,14 @@ interface Info {
 const contactInfo: Info[] = [
   {
     icon: Location,
-    text: '90, Ojodu Akute Road, Ajayi Farms Bus-Stop.',
+    text: 'R. 208, 930 - St. Leste Vila Nova, Goiânia - GO, 74635-055',
     alt: 'Address',
   },
   {
     icon: Email,
-    text: 'churchadmin@tfhconline.net',
+    text: 'marketing.umadmego@gmail.com',
     type: 'email',
     alt: 'Email',
-  },
-  {
-    icon: Phone,
-    text: '+234 805 669 9920',
-    type: 'phone',
-    alt: 'Phone',
   },
 ];
 

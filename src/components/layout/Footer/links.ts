@@ -18,12 +18,6 @@ const links: Link[] = [
       ],
     },
   },
-  {
-    heading: {
-      title: "Mídia",
-      subLinks: [{ name: "Wanderson", destination: "" }],
-    },
-  },
 ];
 
 export default links;
