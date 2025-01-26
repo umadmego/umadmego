@@ -16,10 +16,10 @@ const links: Link[] = [
   //   title: "Giving",
   //   destination: "/giving",
   // },
-  {
-    title: "Eventos",
-    destination: "/events",
-  },
+  // {
+  //   title: "Eventos",
+  //   destination: "/events",
+  // },
   // {
   //   title: "Resources",
   //   destination: "/resources",

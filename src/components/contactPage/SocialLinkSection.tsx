@@ -6,11 +6,10 @@ const SocialLinkSection = () => {
   return (
     <>
       <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center font-secondary  mb-3'>
-        Get in Touch
+        Entre em contato
       </h2>
       <p className='text-lg lg:text-2xl text-center font-medium mb-[59px]'>
-        We do hope you had a great experience while worshipping with us. We look forward
-        to getting to know more of you! We will connect you with the best person.
+        Esperamos que você tenha uma ótima experiência enquanto adoramos juntos. Estamos ansiosos para conhecer mais de você!
       </p>
       <div className='flex justify-center items-center gap-[46px]'>
         {socialLinks.map((link) => (

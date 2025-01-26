@@ -16,8 +16,8 @@ const EventSection = () => {
     const getDevotional = async () => {
       try {
         setLoading(true);
-        const response = await appAxios.get('/event?page=1');
-        setData(response.data.data?.data);
+        //const response = await appAxios.get('/event?page=1');
+       // setData(response.data.data?.data);
       } catch (error) {
         sendCatchFeedback(error);
       } finally {
@@ -44,7 +44,7 @@ const EventSection = () => {
         ) : data && data.length ? (
           data.map((item) => <EventCard key={item.id} event={item} />)
         ) : (
-          <p>No event found </p>
+          <p>Nenhum evento cadastrado </p>
         )}
       </div>
     </section>

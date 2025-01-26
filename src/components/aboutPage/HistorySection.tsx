@@ -12,7 +12,7 @@ const HistorySection = () => {
             Ao longo de mais de duas décadas, a UMADMEGO tem sido um canal de bênçãos para a juventude cristã, promovendo transformação espiritual e crescimento pessoal. Nosso Congresso Geral é o ponto alto do ano, reunindo milhares de jovens em um evento repleto de louvor, ensino e experiências impactantes.
           </p>
           <p>
-            Através de transmissões online, alcançamos corações em todo o mundo, compartilhando mensagens edificantes, louvores inspiradores e testemunhos que transformam vidas. Estamos comprometidos em usar as plataformas digitais para ampliar nosso alcance e abençoar ainda mais pessoas.
+            Através do congresso, compartilhamos mensagens edificantes, louvores inspiradores e testemunhos que transformam vidas.
           </p>
           <p>
             Convidamos você a se juntar a nós, seja presencialmente ou online, para viver momentos únicos de comunhão e fortalecimento espiritual. Inscreva-se no nosso canal e compartilhe os conteúdos com seus amigos e familiares para que mais vidas sejam tocadas pela graça de Deus.

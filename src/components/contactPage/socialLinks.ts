@@ -10,19 +10,19 @@ interface Link {
 
 const socialLinks: Link[] = [
   {
-    alt: 'Youtube Channel',
+    alt: 'Youtube',
     src: YoutubeIcon,
-    destination: 'https://www.youtube.com/@TFHCOnlineTv',
+    destination: 'https://www.youtube.com/@umadmego',
   },
   {
-    alt: 'Facebook Profile',
+    alt: 'Facebook',
     src: FacebookIcon,
-    destination: 'https://www.facebook.com/tfhcng',
+    destination: 'https://www.facebook.com/umadmego',
   },
   {
-    alt: 'Instagram Profile',
+    alt: 'Instagram',
     src: InstagramIcon,
-    destination: 'https://www.instagram.com/tfhcng/',
+    destination: 'https://www.instagram.com/umadmego/',
   },
 ];
 
