@@ -11,8 +11,8 @@ const ContactPage = () => {
       <Header />
       <div className='px-primary py-[100px]'>
         <SocialLinkSection />
-        <ContactLinks />
-        <ChurchLocationSection />
+        {/*<ContactLinks />*/}
+        {/*<ChurchLocationSection />*/}
       </div>
     </AppLayout>
   );

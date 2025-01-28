@@ -17,7 +17,7 @@ const socialLinks: Link[] = [
   {
     alt: 'Facebook',
     src: FacebookIcon,
-    destination: 'https://www.facebook.com/umadmego',
+    destination: 'https://www.facebook.com/umadmego.gyn',
   },
   {
     alt: 'Instagram',
