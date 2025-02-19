@@ -5,6 +5,7 @@ import React from "react";
 import IntroSection from "./IntroSection";
 
 const DynamicGallery = dynamic(() => import("./GallerySection"), {
+  ssr: false,
   loading: () => (
     <div className="flex items-center justify-center">
       <LoadingIndicator />
