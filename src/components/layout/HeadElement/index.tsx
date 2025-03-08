@@ -2,10 +2,10 @@ import Head from 'next/head';
 import React from 'react';
 
 function HeadElement({
-  pageTitle = "UMADMEGO 2025",
-  description = 'Raising sons...',
+  pageTitle = "UMADMEGO 2K25",
+  description = 'Ele Vem!',
   noIndex = false,
-  siteLink = 'https://tfh-website.netlify.app/',
+  siteLink = 'https://umadmego.com.br/',
 }: {
   pageTitle?: string;
   description?: string;
