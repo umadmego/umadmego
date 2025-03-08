@@ -2,13 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    SESSION_NAME: 'TFH Web',
-    SESSION_KEY: 'TFH_WEB_USER',
-    API_URL: 'https://www.goldenogbeka.com/api/v2',
-    API_KEY: 'TFH_ADMIN',
-    YOUTUBE_API_KEY: 'AIzaSyBR2Wg2mC2BTHj0ONibXzPyNpnhL2Egjxg',
-    YOUTUBE_UPLOAD_KEY: 'UU4jT_fVaY8Yf_FkWaDphPPg',
-    YOUTUBE_CHANNEL_ID: 'UC4jT_fVaY8Yf_FkWaDphPPg',
+    SESSION_NAME: '',
+    SESSION_KEY: '',
+    API_URL: '',
+    API_KEY: '',
+    YOUTUBE_API_KEY: '',
+    YOUTUBE_UPLOAD_KEY: '',
+    YOUTUBE_CHANNEL_ID: '',
   },
   images: {
     domains: ['i.ytimg.com', 'res.cloudinary.com'],

@@ -13,6 +13,8 @@ const links: Link[] = [
     heading: {
       title: "Sobre",
       subLinks: [
+        { name: "Página inicial", destination: "/" },
+        { name: "Fotos", destination: "/photo" },
         { name: "Sobre nós", destination: "/about" },
         { name: "Nossos Contatos", destination: "/contact" },
       ],
