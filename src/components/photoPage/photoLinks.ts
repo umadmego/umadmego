@@ -1,10 +1,10 @@
-import SabadoNoite from '@/assets/images/photo/1.png';
-import DomingoManha from '@/assets/images/photo/2.png';
-import DomingoNoite from '@/assets/images/photo/3.png';
-import SegundaManha from '@/assets/images/photo/4.png';
-import SegundaNoite from '@/assets/images/photo/5.png';
-import TercaManha from '@/assets/images/photo/6.png';
-import TercaNoite from '@/assets/images/photo/7.png';
+import SabadoNoite from '@/assets/images/photo/1.jpg';
+import DomingoManha from '@/assets/images/photo/2.jpg';
+import DomingoNoite from '@/assets/images/photo/3.jpg';
+import SegundaManha from '@/assets/images/photo/4.jpg';
+import SegundaNoite from '@/assets/images/photo/5.jpg';
+import TercaManha from '@/assets/images/photo/6.jpg';
+import TercaNoite from '@/assets/images/photo/7.jpg';
 
 interface Link {
   alt: string;

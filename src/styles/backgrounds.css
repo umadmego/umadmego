@@ -48,7 +48,7 @@
 }
 
 .about-header-bg {
-  background-image: url(../assets/backgrounds/about-header.png);
+  background-image: url(../assets/backgrounds/about-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -133,7 +133,7 @@
 }
 
 .contact-header-bg {
-  background-image: url(../assets/backgrounds/contato.png);
+  background-image: url(../assets/backgrounds/contato.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
