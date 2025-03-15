@@ -24,7 +24,7 @@ function HeroSection() {
           : "lg:h-[calc(100vh-96px)]"
       }`}
       style={{
-        backgroundImage: `url(/fundo-tela-inicial-full.png)`,
+        backgroundImage: `url(/fundo-tela-inicial-full.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
