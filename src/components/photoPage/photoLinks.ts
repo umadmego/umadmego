@@ -5,6 +5,9 @@ import SegundaManha from '@/assets/images/photo/4.jpg';
 import SegundaNoite from '@/assets/images/photo/5.jpg';
 import TercaManha from '@/assets/images/photo/6.jpg';
 import TercaNoite from '@/assets/images/photo/7.jpg';
+import PreCongresso from '@/assets/images/photo/8.jpg';
+import Vigilia from '@/assets/images/photo/9.jpg';
+import Esquenta from '@/assets/images/photo/10.jpg';
 
 interface Link {
   alt: string;
@@ -13,6 +16,21 @@ interface Link {
 }
 
 const photoLinks = [
+  {
+    day: 'Pré Congresso',
+    link: 'https://drive.google.com/drive/folders/1WI5KDCLUTN17BCMQtLMp32AWgD1iqLyK',
+    preview: PreCongresso,
+  },
+  {
+    day: 'Vigília',
+    link: 'https://drive.google.com/drive/folders/1BHuOhR_vopHCvh5wYbWgdN0_xuwZa4Du',
+    preview: Vigilia,
+  },
+  {
+    day: 'Esquenta',
+    link: 'https://drive.google.com/drive/folders/1_niMO66ySsTv46PVl3we5NTj64ttJvzI',
+    preview: Esquenta,
+  },
   {
     day: 'Sábado - Noite',
     link: 'https://photos.app.goo.gl/TG8dm5jJjPHrnojB8',
