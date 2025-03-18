@@ -12,9 +12,9 @@ import Congresso2023 from '@/assets/images/photo/congresso2023.jpg';
 import Consagracao2024 from '@/assets/images/photo/consagracao2024.jpg';
 import Faina2024 from '@/assets/images/photo/faina2024.jpg';
 import Clama2024 from '@/assets/images/photo/clama2024.jpg';
-import PreCongresso2025 from '@/assets/images/photo/clama2024.jpg';
-import Vigilia2025 from '@/assets/images/photo/8.jpg';
-import Esquenta2025 from '@/assets/images/photo/8.jpg';
+import PreCongresso2025 from '@/assets/images/photo/precongresso2025.jpg';
+import Vigilia2025 from '@/assets/images/photo/vigilia2025.jpg';
+import Esquenta2025 from '@/assets/images/photo/esquenta2025.jpg';
 import Meninasdefe2025 from '@/assets/images/photo/8.jpg';
 
 interface Link {
@@ -24,53 +24,53 @@ interface Link {
 }
 
 const photoLinks = [
-  // {
-  //   day: 'Pré Congresso - 2025',
-  //   link: 'https://drive.google.com/drive/folders/1WI5KDCLUTN17BCMQtLMp32AWgD1iqLyK',
-  //   preview: PreCongresso,
-  // },
-  // {
-  //   day: 'Vigília - 2025',
-  //   link: 'https://drive.google.com/drive/folders/1BHuOhR_vopHCvh5wYbWgdN0_xuwZa4Du',
-  //   preview: Vigilia,
-  // },
-  // {
-  //   day: 'Esquenta - 2025',
-  //   link: 'https://drive.google.com/drive/folders/1_niMO66ySsTv46PVl3we5NTj64ttJvzI',
-  //   preview: Esquenta,
-  // },
   {
-    day: 'Sábado - Noite - 2025',
+    day: 'Pré Congresso - 2025',
+    link: 'https://photos.app.goo.gl/uP46b634Rn2GgwqV7',
+    preview: PreCongresso2025,
+  },
+  {
+    day: 'Vigília - 2025',
+    link: 'https://photos.app.goo.gl/5EsU7mLcdefMAP1H6',
+    preview: Vigilia2025,
+  },
+  {
+    day: 'Esquenta - 2025',
+    link: 'https://photos.app.goo.gl/bwTdEdA9H2y7HUuB7',
+    preview: Esquenta2025,
+  },
+  {
+    day: 'Congresso 2025 - Sábado - Noite',
     link: 'https://photos.app.goo.gl/TG8dm5jJjPHrnojB8',
     preview: SabadoNoite2025,
   },
   {
-    day: 'Domingo - Manhã - 2025',
+    day: 'Congresso 2025 - Domingo - Manhã',
     link: 'https://photos.app.goo.gl/FhrR68EhQqGrgC2X6',
     preview: DomingoManha2025,
   },
   {
-    day: 'Domingo - Noite - 2025',
+    day: 'Congresso 2025 - Domingo - Noite',
     link: 'https://photos.app.goo.gl/Q7qmdoNSiHyGCgmn6',
     preview: DomingoNoite2025,
   },
   {
-    day: 'Segunda - Manhã - 2025',
+    day: 'Congresso 2025 - Segunda - Manhã',
     link: 'https://photos.app.goo.gl/qLryXfdHTbKNzvBD8',
     preview: SegundaManha2025,
   },
   {
-    day: 'Segunda - Noite - 2025',
+    day: 'Congresso 2025 - Segunda - Noite',
     link: 'https://photos.app.goo.gl/mRmEwB6yhy6KVtwm6',
     preview: SegundaNoite2025,
   },
   {
-    day: 'Terça - Manhã - 2025',
+    day: 'Congresso 2025 - Terça - Manhã',
     link: 'https://photos.app.goo.gl/FqXJVMJCXcvJHvwB9',
     preview: TercaManha2025,
   },
   {
-    day: 'Terça - Noite - 2025',
+    day: 'Congresso 2025 - Terça - Noite',
     link: 'https://photos.app.goo.gl/kz8dD3sBu83npPsh8',
     preview: TercaNoite2025,
   },
