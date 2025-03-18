@@ -1,13 +1,21 @@
-import SabadoNoite from '@/assets/images/photo/1.jpg';
-import DomingoManha from '@/assets/images/photo/2.jpg';
-import DomingoNoite from '@/assets/images/photo/3.jpg';
-import SegundaManha from '@/assets/images/photo/4.jpg';
-import SegundaNoite from '@/assets/images/photo/5.jpg';
-import TercaManha from '@/assets/images/photo/6.jpg';
-import TercaNoite from '@/assets/images/photo/7.jpg';
-import PreCongresso from '@/assets/images/photo/8.jpg';
-import Vigilia from '@/assets/images/photo/9.jpg';
-import Esquenta from '@/assets/images/photo/10.jpg';
+import SabadoNoite2025 from '@/assets/images/photo/sabadonoite2025.jpg';
+import DomingoManha2025 from '@/assets/images/photo/domingomanha2025.jpg';
+import DomingoNoite2025 from '@/assets/images/photo/domingonoite2025.jpg';
+import SegundaManha2025 from '@/assets/images/photo/segundamanha2025.jpg';
+import SegundaNoite2025 from '@/assets/images/photo/segundanoite2025.jpg';
+import TercaManha2025 from '@/assets/images/photo/tercamanha2025.jpg';
+import TercaNoite2025 from '@/assets/images/photo/tercanoite2025.jpg';
+import Vigilia2024 from '@/assets/images/photo/Vigilia2024.jpg';
+import Esquenta2024 from '@/assets/images/photo/esquenta2024.jpg';
+import Meninasdefe2024 from '@/assets/images/photo/meninasdefe2024.jpg';
+import Congresso2023 from '@/assets/images/photo/congresso2023.jpg';
+import Consagracao2024 from '@/assets/images/photo/consagracao2024.jpg';
+import Faina2024 from '@/assets/images/photo/faina2024.jpg';
+import Clama2024 from '@/assets/images/photo/clama2024.jpg';
+import PreCongresso2025 from '@/assets/images/photo/clama2024.jpg';
+import Vigilia2025 from '@/assets/images/photo/8.jpg';
+import Esquenta2025 from '@/assets/images/photo/8.jpg';
+import Meninasdefe2025 from '@/assets/images/photo/8.jpg';
 
 interface Link {
   alt: string;
@@ -16,90 +24,90 @@ interface Link {
 }
 
 const photoLinks = [
-  {
-    day: 'Pré Congresso - 2025',
-    link: 'https://drive.google.com/drive/folders/1WI5KDCLUTN17BCMQtLMp32AWgD1iqLyK',
-    preview: PreCongresso,
-  },
-  {
-    day: 'Vigília - 2025',
-    link: 'https://drive.google.com/drive/folders/1BHuOhR_vopHCvh5wYbWgdN0_xuwZa4Du',
-    preview: Vigilia,
-  },
-  {
-    day: 'Esquenta - 2025',
-    link: 'https://drive.google.com/drive/folders/1_niMO66ySsTv46PVl3we5NTj64ttJvzI',
-    preview: Esquenta,
-  },
+  // {
+  //   day: 'Pré Congresso - 2025',
+  //   link: 'https://drive.google.com/drive/folders/1WI5KDCLUTN17BCMQtLMp32AWgD1iqLyK',
+  //   preview: PreCongresso,
+  // },
+  // {
+  //   day: 'Vigília - 2025',
+  //   link: 'https://drive.google.com/drive/folders/1BHuOhR_vopHCvh5wYbWgdN0_xuwZa4Du',
+  //   preview: Vigilia,
+  // },
+  // {
+  //   day: 'Esquenta - 2025',
+  //   link: 'https://drive.google.com/drive/folders/1_niMO66ySsTv46PVl3we5NTj64ttJvzI',
+  //   preview: Esquenta,
+  // },
   {
     day: 'Sábado - Noite - 2025',
     link: 'https://photos.app.goo.gl/TG8dm5jJjPHrnojB8',
-    preview: SabadoNoite,
+    preview: SabadoNoite2025,
   },
   {
     day: 'Domingo - Manhã - 2025',
     link: 'https://photos.app.goo.gl/FhrR68EhQqGrgC2X6',
-    preview: DomingoManha,
+    preview: DomingoManha2025,
   },
   {
     day: 'Domingo - Noite - 2025',
     link: 'https://photos.app.goo.gl/Q7qmdoNSiHyGCgmn6',
-    preview: DomingoNoite,
+    preview: DomingoNoite2025,
   },
   {
     day: 'Segunda - Manhã - 2025',
     link: 'https://photos.app.goo.gl/qLryXfdHTbKNzvBD8',
-    preview: SegundaManha,
+    preview: SegundaManha2025,
   },
   {
     day: 'Segunda - Noite - 2025',
     link: 'https://photos.app.goo.gl/mRmEwB6yhy6KVtwm6',
-    preview: SegundaNoite,
+    preview: SegundaNoite2025,
   },
   {
     day: 'Terça - Manhã - 2025',
     link: 'https://photos.app.goo.gl/FqXJVMJCXcvJHvwB9',
-    preview: TercaManha,
+    preview: TercaManha2025,
   },
   {
     day: 'Terça - Noite - 2025',
     link: 'https://photos.app.goo.gl/kz8dD3sBu83npPsh8',
-    preview: TercaNoite,
+    preview: TercaNoite2025,
   },
   {
     day: 'Esquenta - 2024',
     link: 'https://photos.app.goo.gl/izWr3eVm19KcAkvL9',
-    preview: TercaNoite,
+    preview: Esquenta2024,
   },
   {
     day: 'Meninas de Fé - 2024',
     link: 'https://photos.app.goo.gl/QFt3jp9HQJPupAMq7',
-    preview: TercaNoite,
+    preview: Meninasdefe2024,
   },
   {
     day: 'Congresso Faina - 2024',
     link: 'https://photos.app.goo.gl/c3bN6XPTH9TaLajCA',
-    preview: TercaNoite,
+    preview: Faina2024,
   },
   {
     day: 'Clama - 2024',
     link: 'https://photos.app.goo.gl/g5C9y3Vb9BiKJ1eFA',
-    preview: TercaNoite,
+    preview: Clama2024,
   },
   {
     day: 'Consagração - 2024',
     link: 'https://photos.app.goo.gl/1rXRd77zbKLJWWqs8',
-    preview: TercaNoite,
+    preview: Consagracao2024,
   },
   {
     day: 'Vigília - 2024',
     link: 'https://photos.app.goo.gl/aQAfgkwKxAMGsLrJ7',
-    preview: TercaNoite,
+    preview: Vigilia2024,
   },
   {
     day: 'Congresso 2023',
     link: 'https://photos.app.goo.gl/SomMJv6GLrXNFbsT8',
-    preview: TercaNoite,
+    preview: Congresso2023,
   },
 ];
 export default photoLinks;
