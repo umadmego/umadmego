@@ -5,7 +5,7 @@ const PhotoSection = () => {
     return (
         <>
             <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center font-secondary mb-3'>
-                Veja as fotos do ano de 2025
+                Veja as fotos dos eventos
             </h2>
             <p className='text-lg lg:text-2xl text-center font-medium mb-[59px]'>
                 Registramos os melhores momentos e queremos compartilhar com você
