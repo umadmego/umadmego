@@ -5,7 +5,7 @@ import SegundaManha2025 from '@/assets/images/photo/segundamanha2025.jpg';
 import SegundaNoite2025 from '@/assets/images/photo/segundanoite2025.jpg';
 import TercaManha2025 from '@/assets/images/photo/tercamanha2025.jpg';
 import TercaNoite2025 from '@/assets/images/photo/tercanoite2025.jpg';
-import Vigilia2024 from '@/assets/images/photo/Vigilia2024.jpg';
+import Vigilia2024 from '@/assets/images/photo/vigilia2024.jpg';
 import Esquenta2024 from '@/assets/images/photo/esquenta2024.jpg';
 import Meninasdefe2024 from '@/assets/images/photo/meninasdefe2024.jpg';
 import Congresso2023 from '@/assets/images/photo/congresso2023.jpg';
