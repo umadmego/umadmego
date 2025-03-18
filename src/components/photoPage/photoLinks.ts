@@ -5,6 +5,12 @@ import SegundaManha2025 from '@/assets/images/photo/segundamanha2025.jpg';
 import SegundaNoite2025 from '@/assets/images/photo/segundanoite2025.jpg';
 import TercaManha2025 from '@/assets/images/photo/tercamanha2025.jpg';
 import TercaNoite2025 from '@/assets/images/photo/tercanoite2025.jpg';
+import SabadoNoite2024 from '@/assets/images/photo/sabadonoite2024.jpg';
+import DomingoManha2024 from '@/assets/images/photo/domingomanha2024.jpg';
+import DomingoNoite2024 from '@/assets/images/photo/domingonoite2024.jpg';
+import SegundaNoite2024 from '@/assets/images/photo/segundanoite2024.jpg';
+import TercaManha2024 from '@/assets/images/photo/tercamanha2024.jpg';
+import TercaNoite2024 from '@/assets/images/photo/tercanoite2024.jpg';
 import Vigilia2024 from '@/assets/images/photo/vigilia2024.jpg';
 import Esquenta2024 from '@/assets/images/photo/esquenta2024.jpg';
 import Meninasdefe2024 from '@/assets/images/photo/meninasdefe2024.jpg';
@@ -88,6 +94,36 @@ const photoLinks = [
     day: 'Congresso Faina - 2024',
     link: 'https://photos.app.goo.gl/c3bN6XPTH9TaLajCA',
     preview: Faina2024,
+  },
+  {
+    day: 'Congresso 2024 - Sábado - Noite',
+    link: 'https://photos.app.goo.gl/RWtUFMcq3sTkWV4o6',
+    preview: SabadoNoite2024,
+  },
+  {
+    day: 'Congresso 2024 - Domingo - Manhã',
+    link: 'https://photos.app.goo.gl/9kbXsXg54VidQPoG7',
+    preview: DomingoManha2024,
+  },
+  {
+    day: 'Congresso 2024 - Domingo - Noite',
+    link: 'https://photos.app.goo.gl/tRpkUzQvevosJk7e6',
+    preview: DomingoNoite2024,
+  },
+  {
+    day: 'Congresso 2024 - Segunda - Noite',
+    link: 'https://photos.app.goo.gl/mRmEwB6yhy6KVtwm6',
+    preview: SegundaNoite2024,
+  },
+  {
+    day: 'Congresso 2024 - Terça - Manhã',
+    link: 'https://photos.app.goo.gl/d2KqbwSYuUrZB9Cg9',
+    preview: TercaManha2024,
+  },
+  {
+    day: 'Congresso 2024 - Terça - Noite',
+    link: 'https://photos.app.goo.gl/ZFeVpTXJs6ggerFo6',
+    preview: TercaNoite2024,
   },
   {
     day: 'Clama - 2024',
