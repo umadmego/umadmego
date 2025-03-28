@@ -15,6 +15,7 @@ const links: Link[] = [
       subLinks: [
         { name: "Página inicial", destination: "/" },
         { name: "Fotos", destination: "/photo" },
+        { name: "Sócio", destination: "/partner" },
         { name: "Sobre nós", destination: "/about" },
         { name: "Nossos Contatos", destination: "/contact" },
       ],

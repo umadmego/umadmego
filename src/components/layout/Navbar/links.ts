@@ -13,6 +13,10 @@ const links: Link[] = [
     destination: "/photo",
   },
   {
+    title: "Sócio",
+    destination: "/partner",
+  },
+  {
     title: "Sobre",
     destination: "/about",
   },
