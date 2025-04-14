@@ -81,6 +81,11 @@ const photoLinks = [
     preview: TercaNoite2025,
   },
   {
+    day: 'Aniversário Pastor Fábio - 2024',
+    link: 'https://photos.app.goo.gl/1gB5PNTkkc41MbrW8',
+    preview: Esquenta2024,
+  },
+  {
     day: 'Esquenta - 2024',
     link: 'https://photos.app.goo.gl/izWr3eVm19KcAkvL9',
     preview: Esquenta2024,
