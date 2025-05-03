@@ -21,7 +21,8 @@ import Clama2024 from '@/assets/images/photo/clama2024.jpg';
 import PreCongresso2025 from '@/assets/images/photo/precongresso2025.jpg';
 import Vigilia2025 from '@/assets/images/photo/vigilia2025.jpg';
 import Esquenta2025 from '@/assets/images/photo/esquenta2025.jpg';
-import Meninasdefe2025 from '@/assets/images/photo/8.jpg';
+import Meninasdefe2025 from '@/assets/images/photo/Meninasdefe2025.jpg';
+import NiverFabio from '@/assets/images/photo/niverFabio.jpeg';
 
 interface Link {
   alt: string;
@@ -30,6 +31,11 @@ interface Link {
 }
 
 const photoLinks = [
+  {
+    day: 'Meninas de Fé - 2025',
+    link: 'https://photos.app.goo.gl/kNiEDWLYzrxQ1WJz8',
+    preview: Meninasdefe2025,
+  },
   {
     day: 'Pré Congresso - 2025',
     link: 'https://photos.app.goo.gl/uP46b634Rn2GgwqV7',
@@ -83,7 +89,7 @@ const photoLinks = [
   {
     day: 'Aniversário Pastor Fábio - 2024',
     link: 'https://photos.app.goo.gl/1gB5PNTkkc41MbrW8',
-    preview: Esquenta2024,
+    preview: NiverFabio,
   },
   {
     day: 'Esquenta - 2024',
