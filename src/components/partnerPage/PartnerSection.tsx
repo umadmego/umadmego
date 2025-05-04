@@ -35,7 +35,7 @@ const PartnerSection = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.6 }}
                 >
-                    Além disso, como associado, você garante uma camiseta exclusiva e um presente surpresa no Congresso de 2026! 🎁
+                    Além disso, como associado, você garante a camiseta do congresso e um presente surpresa no Congresso de 2026! 🎁
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0 }}
