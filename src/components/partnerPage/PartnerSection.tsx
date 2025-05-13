@@ -52,21 +52,57 @@ const PartnerSection = () => {
                     Ao se tornar um associado, você passa a fazer parte de uma rede de pessoas comprometidas com o Reino de Deus, recebendo conteúdos exclusivos, atualizações sobre os eventos e oportunidades especiais dentro do projeto.
                 </motion.p>
 
-                <div className="text-center mt-6">
-                    <motion.a
-                        href='https://exemplo.com/inscricao'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='bg-primary text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-opacity-80 transition'
-                        initial={{scale: 0.9}}
-                        animate={{scale: 1}}
-                        transition={{duration: 0.3, delay: 1.2}}
-                    >
-                        Inscreva-se agora
-                    </motion.a>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 1.2 }}
+                    className="mt-8"
+                >
+                    <h3 className="text-xl font-bold mb-3">🧾 Tipos de Pagamento</h3>
+
+                    <p className="mb-4">
+                        Você pode escolher entre duas formas de contribuição como associado +UMADMEGO:
+                    </p>
+
+                    <h4 className="text-lg font-semibold">💳 Pagamento Recorrente (Cartão de Crédito)</h4>
+                    <p className="mb-4">
+                        Ao escolher o pagamento recorrente, a contribuição de <strong>R$30,00</strong> será cobrada
+                        <strong> automaticamente no seu cartão de crédito</strong> todos os meses, durante <strong>9 meses</strong>,
+                        até o <strong>mês do Congresso 2026</strong>. Essa é a opção mais prática: você faz apenas uma vez a adesão
+                        e não precisa se preocupar em lembrar de pagar todos os meses.
+                    </p>
+
+                    <div className="text-center mb-6">
+                        <a
+                            href='http://pag.ae/7_CYHNQwa'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='bg-primary text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-opacity-80 transition'
+                        >
+                            Fazer Pagamento Recorrente
+                        </a>
+                    </div>
+
+                    <h4 className="text-lg font-semibold">💸 Pagamento Avulso (PIX, Cartão ou Débito)</h4>
+                    <p className="mb-4">
+                        Se preferir, você pode contribuir mensalmente através do pagamento avulso. Nesse caso, será
+                        necessário <strong>acessar o link todos os meses</strong> e realizar o pagamento manualmente até fevereiro de 2026,
+                        escolhendo a forma que preferir: <strong>PIX</strong>, <strong>crédito à vista</strong> ou <strong>débito</strong>.
+                    </p>
+
+                    <div className="text-center">
+                        <a
+                            href='https://lojaumadmego.lojavirtuolpro.com/associados/c'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='bg-primary text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-opacity-80 transition'
+                        >
+                            Fazer Pagamento Avulso
+                        </a>
+                    </div>
                     <br/>
                     <br/>
-                </div>
+                </motion.div>
             </div>
         </section>
     );
