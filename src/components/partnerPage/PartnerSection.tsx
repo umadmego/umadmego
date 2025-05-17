@@ -19,43 +19,49 @@ const PartnerSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
-                Com uma contribuição mensal a partir de R$30,00, você se torna parte ativa do que Deus está fazendo na nossa geração!
+                Com uma contribuição mensal no valor de R$30,00, você se torna parte ativa do que Deus está fazendo na nossa geração!
             </motion.p>
 
             <div className="max-w-4xl mx-auto flex flex-col gap-6 text-justify text-lg leading-relaxed">
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 0.5, delay: 0.4}}
                 >
-                    Seu apoio ajuda a custear pregadores, cantores, alimentação gratuita para todos os participantes e a estrutura necessária para impactar vidas e promover valores que transformam nossa sociedade.
+                    Seu apoio ajuda a custear pregadores, cantores, alimentação gratuita para todos os participantes e a
+                    estrutura necessária para impactar vidas e promover valores que transformam nossa sociedade.
                 </motion.p>
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.6 }}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 0.5, delay: 0.8}}
                 >
-                    Além disso, como associado, você garante a camiseta do congresso e um presente surpresa no Congresso de 2026! 🎁
+                    Sua participação fortalece um movimento que tem transformado vidas, levando a mensagem de Cristo a
+                    milhares de jovens. Através dos recursos arrecadados, conseguimos proporcionar uma experiência única
+                    de louvor, aprendizado e comunhão.
                 </motion.p>
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.8 }}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 0.5, delay: 1.0}}
                 >
-                    Sua participação fortalece um movimento que tem transformado vidas, levando a mensagem de Cristo a milhares de jovens. Através dos recursos arrecadados, conseguimos proporcionar uma experiência única de louvor, aprendizado e comunhão.
+                    Ao se tornar um associado, você passa a fazer parte de uma rede de pessoas comprometidas com o Reino
+                    de Deus, recebendo conteúdos exclusivos, atualizações sobre os eventos e oportunidades especiais
+                    dentro do projeto.
                 </motion.p>
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.0 }}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 0.5, delay: 0.6}}
                 >
-                    Ao se tornar um associado, você passa a fazer parte de uma rede de pessoas comprometidas com o Reino de Deus, recebendo conteúdos exclusivos, atualizações sobre os eventos e oportunidades especiais dentro do projeto.
+                    🎁 <strong>Benefícios para associados:</strong> ao completar <strong>9 contribuições mensais até
+                    fevereiro de 2026</strong>, você garante a <strong>camiseta oficial do congresso</strong> e
+                    um <strong>presente surpresa</strong> no Congresso de 2026!
                 </motion.p>
-
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.2 }}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 0.5, delay: 1.2}}
                     className="mt-8"
                 >
                     <h3 className="text-xl font-bold mb-3">🧾 Tipos de Pagamento</h3>
@@ -67,8 +73,10 @@ const PartnerSection = () => {
                     <h4 className="text-lg font-semibold">💳 Pagamento Recorrente (Cartão de Crédito)</h4>
                     <p className="mb-4">
                         Ao escolher o pagamento recorrente, a contribuição de <strong>R$30,00</strong> será cobrada
-                        <strong> automaticamente no seu cartão de crédito</strong> todos os meses, durante <strong>9 meses</strong>,
-                        até o <strong>mês do Congresso 2026</strong>. Essa é a opção mais prática: você faz apenas uma vez a adesão
+                        <strong> automaticamente no seu cartão de crédito</strong> todos os meses, durante <strong>9
+                        meses</strong>,
+                        até o <strong>mês do Congresso 2026</strong>. Essa é a opção mais prática: você faz apenas uma
+                        vez a adesão
                         e não precisa se preocupar em lembrar de pagar todos os meses.
                     </p>
 
@@ -86,8 +94,10 @@ const PartnerSection = () => {
                     <h4 className="text-lg font-semibold">💸 Pagamento Avulso (PIX, Cartão ou Débito)</h4>
                     <p className="mb-4">
                         Se preferir, você pode contribuir mensalmente através do pagamento avulso. Nesse caso, será
-                        necessário <strong>acessar o link todos os meses</strong> e realizar o pagamento manualmente até fevereiro de 2026,
-                        escolhendo a forma que preferir: <strong>PIX</strong>, <strong>crédito à vista</strong> ou <strong>débito</strong>.
+                        necessário <strong>acessar o link todos os meses</strong> e realizar o pagamento manualmente até
+                        fevereiro de 2026,
+                        escolhendo a forma que preferir: <strong>PIX</strong>, <strong>crédito à
+                        vista</strong> ou <strong>débito</strong>.
                     </p>
 
                     <div className="text-center">
