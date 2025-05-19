@@ -17,9 +17,9 @@ function IntroSection() {
       </h1>
 
       <div className="flex items-center flex-wrap lg:gap-10 gap-[22px] justify-center lg:justify-start">
-        <a href="https://www.instagram.com/umadmego" target="_blank">
+        <a href="https://www.instagram.com/partner" target="_blank">
           <Button className="lg:!h-[60px] lg:!w-[241px] h-[35px] lg:!text-lg !font-semibold">
-            Acesse o Instagram
+            Seja Sócio
           </Button>
         </a>
         <a href="https://umadmego.com.br/photo" target="_blank">
