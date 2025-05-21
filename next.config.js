@@ -10,11 +10,12 @@ const nextConfig = {
     YOUTUBE_UPLOAD_KEY: '',
     YOUTUBE_CHANNEL_ID: '',
   },
+  experimental: {
+    useCache: true,
+  },
   images: {
-    domains: ['i.ytimg.com', 'res.cloudinary.com'],
     unoptimized: true,
   },
-  output: 'export',
 };
 
 module.exports = nextConfig;

@@ -1,9 +1,13 @@
+'use server'
+
 import React from 'react';
 import CelularImage from '@/assets/images/home/celular-loja.png';
 import Image from 'next/image';
 import Button from "@/common/Button";
 
 const StoreSection = () => {
+
+    'use cache'
     return (
         <section
             id='store'
@@ -18,7 +22,8 @@ const StoreSection = () => {
                 </h2>
                 <p className='text-white text-md lg:text-xl font-normal mb-[64px] lg:md-[74px]'>
                     Visite a loja oficial da UMADMEGO e confira nossos produtos exclusivos!
-                    <br/> Adquira a camiseta oficial do congresso de 2025 e outros itens personalizados especialmente preparados para
+                    <br/> Adquira a camiseta oficial do congresso de 2025 e outros itens personalizados especialmente
+                    preparados para
                     você.
                 </p>
                 <a href="https://lojaumadmego.lojavirtuolpro.com/" target="_blank">
