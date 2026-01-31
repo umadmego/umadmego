@@ -9,16 +9,42 @@ function LivePage() {
         <h1 className="text-4xl font-bold">Ao Vivo</h1>
       </div>
       <section className="container mx-auto py-12 px-4">
-        <div className="aspect-w-16 aspect-h-9">
-          <iframe
-            src="https://www.youtube.com/embed/live_stream?channel=UC9Fp6M5-hG2vju2fA6As25w"
-            title="Transmissão ao vivo UMADMEGO"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="w-full h-full"
-          ></iframe>
+        {/* 2025 Playlist */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-center mb-6">UMADMEGO 2025 - Ao Vivo</h2>
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/videoseries?si=WTNi1aXV45lW4Yx5&amp;list=PLtkZK7cmglg5KwTf3Mhwe-MgGbzJa6Fyi"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
         </div>
+
+        {/* 2024 Playlist */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-center mb-6">UMADMEGO 2024 - Ao Vivo</h2>
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/videoseries?si=_Zb1ZAouid0v1L8_&amp;list=PLtkZK7cmglg72U_LEHRJdxbxaaCCvh_Vi"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+
         <div className="mt-8 text-center">
             <h2 className="text-2xl font-bold mb-2">Acompanhe nossas transmissões</h2>
             <p className="text-lg">

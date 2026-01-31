@@ -1,13 +1,14 @@
 import Button from '@/common/Button';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname, useRouter } from 'next/navigation';
 import React from 'react';
 import links from './links';
 
 function NavLinks() {
   const router = useRouter();
+  const pathname = usePathname();
   const isActiveRoute = (route: string) => {
-    return router.pathname === route;
+    return pathname === route;
     1;
   };
   return (
