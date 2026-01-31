@@ -2,8 +2,8 @@ import Head from 'next/head';
 import React from 'react';
 
 function HeadElement({
-  pageTitle = "UMADMEGO 2K25",
-  description = 'Ele Vem!',
+  pageTitle = "UMADMEGO 2K26",
+  description = 'Persistência!',
   noIndex = false,
   siteLink = 'https://umadmego.com.br/',
 }: {

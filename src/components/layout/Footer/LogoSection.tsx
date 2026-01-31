@@ -1,21 +1,16 @@
-import Image from "next/image";
-import React from "react";
-import WhiteLogo from "@/assets/brand/logo-white-2026.png";
+
+import React from 'react';
+import Image from 'next/image';
 
 function LogoSection() {
   return (
-      <div className="text-white flex-col">
-          <Image
-              src={WhiteLogo}
-              alt="UMADMEGO"
-              className="h-[128px] w-auto "
-          />
-          <p className="font-normal mt-[34px] text-sm">UMADMEGO 2K26 | Persistência!</p>
-          <p className="font-normal mt-[34px] mb-[27px] text-sm">
-              União de Mocidade das Assembleias de Deus Missão no Estado de Goiás<br/>
-              Líderes: Pr. Fábio e Ir. Eliete
-          </p>
+    <div className='flex flex-col gap-[30px] items-start'>
+      <Image src="/assets/brand/logo-white-2026.png" alt="Logo" width={256} height={64} className="mb-4" />
+      
+      <div className="text-white text-sm text-opacity-80">
+        <p className="mb-2">© 2026 UMADMEGO. Todos os direitos reservados.</p>
       </div>
+    </div>
   );
 }
 
