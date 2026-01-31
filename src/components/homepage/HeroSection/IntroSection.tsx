@@ -16,7 +16,7 @@ function IntroSection() {
         <span className="font-secondary font-bold lg:text-[55px] text-[40px]">
           UMADMEGO&nbsp;
             <span className="font-secondary text-secondary font-bold lg:text-[55px] text-[40px]">
-            2k25
+            2k26
           </span>
         </span>
             </h1>

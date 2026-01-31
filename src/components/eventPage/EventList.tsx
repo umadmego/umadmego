@@ -5,7 +5,7 @@ import { sendCatchFeedback } from '@/functions/feedback';
 import { EventType } from '@/types/types';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import BrandImage from '@/assets/brand/logo.png';
+import BrandImage from '@/assets/brand/logo-2026.png';
 import Link from 'next/link';
 
 const EventList = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "@/assets/brand/logo.png";
+import Logo from "@/assets/brand/logo-2026.png";
 import Image from "next/image";
 import NavLinks from "./NavLinks";
 import Link from "next/link";

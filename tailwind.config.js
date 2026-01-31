@@ -14,8 +14,8 @@ module.exports = {
         cursive: "Kaushan Script, cursive",
       },
       textColor: {
-        primary: "#002F72",
-        secondary: "#FF6634",
+        primary: "#6B4F4B", // Brown
+        secondary: "#DDCDBB", // Sand Beige
         success: "#08A05C",
         error: "#F13637",
         warning: "#FFC107",
@@ -23,15 +23,15 @@ module.exports = {
         light: "white",
       },
       backgroundColor: {
-        primary: "#002F72",
-        secondary: "#FE6534",
+        primary: "#6B4F4B", // Brown
+        secondary: "#DDCDBB", // Sand Beige
         success: "#08A05C",
         error: "#F13637",
         warning: "#FFC107",
       },
       borderColor: {
-        primary: "#002F72",
-        secondary: "#FE6534",
+        primary: "#6B4F4B", // Brown
+        secondary: "#DDCDBB", // Sand Beige
         error: "#F13637",
         lightGrey: "#A9A9A9",
         success: "#08A05C",
