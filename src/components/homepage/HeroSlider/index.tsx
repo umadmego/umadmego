@@ -6,13 +6,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-  '/images/home/slider/slider1.jpg',
   '/images/home/slider/slider2.jpg',
   '/images/home/slider/slider3.jpg',
   '/images/home/slider/slider4.jpg',
   '/images/home/slider/slider5.jpg',
   '/images/home/slider/slider6.jpg',
-  '/images/home/slider/slider7.jpg',
 ];
 
 const HeroSlider: React.FC = () => {
@@ -37,7 +35,7 @@ const HeroSlider: React.FC = () => {
         <motion.img
           key={index}
           src={images[index]}
-          alt="UMADMEGO Congress"
+          alt="UMADMEG"
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 1.05 }}
