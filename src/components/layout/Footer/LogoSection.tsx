@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import WhiteLogo from "@/assets/brand/logo-2026.png";
+import WhiteLogo from "@/assets/brand/logo-white-2026.png";
 
 function LogoSection() {
   return (

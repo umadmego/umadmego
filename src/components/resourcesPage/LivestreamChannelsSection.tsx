@@ -1,29 +1,15 @@
 import React from 'react';
-import { streamingChannels } from './data';
-import Image from 'next/image';
 
 const LivestreamChannelsSection = () => {
   return (
-    <section id='livestream-channels' className='px-primary pt-[100px]'>
-      <h2 className='text-primary font-bold text-[30px] lg:text-[40px] text-center font-secondary  mb-[23px]'>
-        Other Livestream Channels
-      </h2>
-      <p className='text-lg lg:text-2xl text-center font-medium mb-[83px]'>
-        Select the channel you want to stream from.
-      </p>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-11 w-full'>
-        {streamingChannels.map((channel) => (
-          <a
-            key={channel.link}
-            className='flex items-center justify-center w-full rounded-[10px] p-7 shadow-md bg-white'
-            href={channel.link}
-            target='_blank'
-          >
-            <Image src={channel.image} alt='streaming platform' />
-          </a>
-        ))}
+    <div className="bg-white p-6">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8">Livestream Channels Section</h2>
+        <p className="text-lg text-gray-700 text-center">
+          This is a placeholder for the livestream channels section.
+        </p>
       </div>
-    </section>
+    </div>
   );
 };
 

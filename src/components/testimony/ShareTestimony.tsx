@@ -1,16 +1,14 @@
-import Button from '@/common/Button';
-import Link from 'next/link';
 import React from 'react';
 
-const ShareTestimony = ({ className }: { className?: string }) => {
+const ShareTestimony = () => {
   return (
-    <div className={'flex items-center flex-col gap-8 w-full text-center ' + className}>
-      <h2 className='text-primary text-xl md:text-xl lg:text-3xl font-bold'>
-        Has God done Wondrous works for you?
-      </h2>
-      <Link href='/testimony/new'>
-        <Button className='!w-[280px] !max-w-full '>Share your Testimony</Button>
-      </Link>
+    <div className="bg-white p-6">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8">Share Testimony</h2>
+        <p className="text-lg text-gray-700 text-center">
+          This is a placeholder for the share testimony section.
+        </p>
+      </div>
     </div>
   );
 };

@@ -1,20 +1,14 @@
 import React from 'react';
-import podcastLinks from './podcastLinks';
-import Image from 'next/image';
 
 const PodcastChannels = () => {
   return (
-    <div className='flex flex-col gap-[30px] w-full items-center'>
-      {podcastLinks.map((podcast) => (
-        <a
-          key={podcast.link}
-          href={podcast.link}
-          target='_blank'
-          className='md:w-[70%] w-full bg-white p-5 rounded-md shadow flex items-center justify-center'
-        >
-          <Image src={podcast.icon} className='object-contain' alt='podcast' />
-        </a>
-      ))}
+    <div className="bg-white p-6">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8">Podcast Channels</h2>
+        <p className="text-lg text-gray-700 text-center">
+          This is a placeholder for the podcast channels.
+        </p>
+      </div>
     </div>
   );
 };
