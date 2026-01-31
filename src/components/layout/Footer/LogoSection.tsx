@@ -1,15 +1,19 @@
-
 import React from 'react';
 import Image from 'next/image';
+import logo from '@/assets/brand/logo-white-2026.png';
 
 function LogoSection() {
   return (
-    <div className='flex flex-col gap-[30px] items-start'>
-      <Image src="/assets/brand/logo-white-2026.png" alt="Logo" width={256} height={64} className="mb-4" />
-      
-      <div className="text-white text-sm text-opacity-80">
-        <p className="mb-2">© 2026 UMADMEGO. Todos os direitos reservados.</p>
-      </div>
+    <div className="flex flex-col gap-[30px] items-start">
+      <Image
+        src={logo}
+        alt="Logo UMADMEGO"
+        width={150}
+        height={50}
+      />
+      <p className="text-white text-[15px]">
+        Copyright © UMADMEGO {new Date().getFullYear()}. Todos os direitos reservados.
+      </p>
     </div>
   );
 }

@@ -6,11 +6,11 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const photoHighlights = [
-  { id: 1, src: '/images/home/slider/slider19.jpg', colSpan: 'col-span-1', rowSpan: 'row-span-2' },
+  { id: 1, src: '/images/home/slider/slider19.jpg', colSpan: 'col-span-1', rowSpan: 'sm:row-span-2' },
   { id: 2, src: '/images/home/slider/slider11.jpg', colSpan: 'col-span-1', rowSpan: 'row-span-1' },
   { id: 3, src: '/images/home/slider/slider13.jpg', colSpan: 'col-span-1', rowSpan: 'row-span-1' },
-  { id: 4, src: '/images/home/slider/slider14.jpg', colSpan: 'col-span-1', rowSpan: 'row-span-2' },
-  { id: 5, src: '/images/home/slider/slider16.jpg', colSpan: 'col-span-1 sm:col-span-2', rowSpan: 'row-span-2' },
+  { id: 4, src: '/images/home/slider/slider14.jpg', colSpan: 'col-span-1', rowSpan: 'sm:row-span-2' },
+  { id: 5, src: '/images/home/slider/slider16.jpg', colSpan: 'col-span-1 sm:col-span-2', rowSpan: 'sm:row-span-2' },
   { id: 6, src: '/images/home/slider/slider15.jpg', colSpan: 'col-span-1', rowSpan: 'row-span-1' },
   { id: 7, src: '/images/home/slider/slider17.jpg', colSpan: 'col-span-1', rowSpan: 'row-span-1' },
 ];
