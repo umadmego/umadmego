@@ -17,6 +17,10 @@ const links: Link[] = [
     destination: "/photo",
   },
   {
+    title: "Umadmídia",
+    destination: "/umadmidia",
+  },
+  {
     title: "Sócio",
     destination: "/partner",
   },

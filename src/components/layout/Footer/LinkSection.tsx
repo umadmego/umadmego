@@ -4,10 +4,8 @@ import React from 'react';
 const footerLinks = [
   { name: 'Início', href: '/' },
   { name: 'Sobre Nós', href: '/about' },
-  { name: 'Eventos', href: '/church-locations' },
   { name: 'Galeria', href: '/photo' },
   { name: 'Contato', href: '/contact' },
-  { name: 'Inscreva-se', href: '/auth/register' },
 ];
 
 function LinkSection() {
