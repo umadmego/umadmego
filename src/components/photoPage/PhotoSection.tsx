@@ -23,7 +23,7 @@ const PhotoSection = () => {
                                 alt={day} 
                                 width={400} 
                                 height={300} 
-                                className='w-full h-auto'
+                                className='w-full h-64 object-cover'
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={blurDataURL}

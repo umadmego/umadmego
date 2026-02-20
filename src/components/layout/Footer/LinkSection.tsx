@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Link from 'next/link';
 
 const footerLinks = [
   { name: 'Início', href: '/' },
@@ -15,9 +16,9 @@ function LinkSection() {
       <ul className="grid grid-cols-2 gap-y-3 gap-x-6">
         {footerLinks.map((link) => (
           <li key={link.name}>
-            <a href={link.href} className="hover:text-secondary transition-colors duration-300">
+            <Link href={link.href} className="hover:text-secondary transition-colors duration-300">
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

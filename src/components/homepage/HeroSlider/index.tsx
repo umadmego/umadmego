@@ -87,10 +87,8 @@ const HeroSlider: React.FC = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.9, ease: 'backOut' }}
         >
-          <Link href={slides[currentSlide].buttonLink}>
-            <a className="bg-secondary text-primary font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
+          <Link href={slides[currentSlide].buttonLink} className="bg-secondary text-primary font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
               {slides[currentSlide].buttonText}
-            </a>
           </Link>
         </motion.div>
       </div>

@@ -20,9 +20,11 @@ import Faina2024 from '@/assets/images/photo/faina2024.jpg';
 import Clama2024 from '@/assets/images/photo/clama2024.jpg';
 import PreCongresso2025 from '@/assets/images/photo/precongresso2025.jpg';
 import Vigilia2025 from '@/assets/images/photo/vigilia2025.jpg';
+import Vigilia2026 from '@/assets/images/photo/vigilia2026.jpg';
 import Esquenta2025 from '@/assets/images/photo/esquenta2025.jpg';
 import Meninasdefe2025 from '@/assets/images/photo/Meninasdefe2025.jpg';
 import NiverFabio from '@/assets/images/photo/niverFabio.jpeg';
+import Congresso2026 from '@/assets/images/photo/2026.jpg';
 
 interface Link {
   alt: string;
@@ -31,6 +33,31 @@ interface Link {
 }
 
 const photoLinks = [
+  {
+    day: 'Congresso 2026 - Sábado',
+    link: 'https://photos.app.goo.gl/Q8FgXwhznur7hK8r8',
+    preview: Congresso2026,
+  },
+  {
+    day: 'Congresso 2026 - Domingo',
+    link: 'https://photos.app.goo.gl/8o1Vjp43N8rUvwtf9',
+    preview: Congresso2026,
+  },
+  {
+    day: 'Congresso 2026 - Segunda',
+    link: 'https://photos.app.goo.gl/6aa6GwDekahX6RHb9',
+    preview: Congresso2026,
+  },
+  {
+    day: 'Congresso 2026 - Terça',
+    link: 'https://photos.app.goo.gl/dLgeCh9mzPWnidDy5',
+    preview: Congresso2026,
+  },
+  {
+    day: 'Vigília 2026',
+    link: 'https://photos.app.goo.gl/wHL6QNohEubwJC3Z6',
+    preview: Vigilia2026,
+  },
   {
     day: 'Meninas de Fé - 2025',
     link: 'https://photos.app.goo.gl/kNiEDWLYzrxQ1WJz8',
