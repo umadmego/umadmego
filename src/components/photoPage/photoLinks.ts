@@ -150,7 +150,7 @@ const photoLinks = [
   },
   {
     day: 'Congresso 2024 - Segunda - Noite',
-    link: 'https://photos.app.goo.gl/mRmEwB6yhy6KVtwm6',
+    link: 'https://photos.app.goo.gl/bobHoXd7EHnzrpYv7',
     preview: SegundaNoite2024,
   },
   {

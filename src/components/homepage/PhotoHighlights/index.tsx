@@ -67,10 +67,8 @@ const PhotoHighlights: React.FC = () => {
         </Swiper>
 
         <div className="text-center mt-12">
-          <Link href="/photo">
-            <a className="bg-secondary text-primary font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300">
+          <Link href="/photo" className="bg-secondary text-primary font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300">
               Ver Galeria Completa
-            </a>
           </Link>
         </div>
       </div>
