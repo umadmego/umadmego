@@ -1,11 +1,10 @@
-'use server'
+'use client';
 
 import React from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 
 function AppLayout({children}: { children: React.ReactNode }) {
-    'use cache'
 
     return (
         <>

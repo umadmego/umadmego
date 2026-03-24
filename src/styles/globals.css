@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   scroll-behavior: smooth !important;
   overflow-x: hidden;
-  color: #000000;
+  color: #6B4F4B;
 }
 
 * {
@@ -29,7 +29,7 @@ body {
 .inputContainer>label {
   font-size: 1.02038125rem;
   font-weight: 400;
-  color: #002F72;
+  color: #6B4F4B;
 }
 
 .formContainer>h2 {
@@ -46,21 +46,21 @@ textarea {
   padding-inline: 12px;
   font-size: 1.02038125rem;
   font-family: 'Poppins', sans-serif;
-  border: 1px solid #0D57BE;
+  border: 1px solid #6B4F4B;
   border-radius: 5px;
   width: 100%;
-  color: #000
+  color: #6B4F4B;
 }
 
 .inputContainer>* input:focus,
 textarea:focus {
-  border: 1px solid #002F72 !important;
-  outline: 1px solid #002F72 !important;
+  border: 1px solid #6B4F4B !important;
+  outline: 1px solid #6B4F4B !important;
 }
 
 .inputContainer>* input::placeholder,
 textarea::placeholder {
-  color: #CFCFCF;
+  color: #DDCDBB;
   font-style: italic;
 }
 

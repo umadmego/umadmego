@@ -9,8 +9,16 @@ const links: Link[] = [
     destination: "/",
   },
   {
+    title: "Ao Vivo",
+    destination: "/live",
+  },
+  {
     title: "Fotos",
     destination: "/photo",
+  },
+  {
+    title: "Umadmídia",
+    destination: "/umadmidia",
   },
   {
     title: "Sócio",

@@ -7,7 +7,7 @@ import LogoSection from './LogoSection';
 function Footer() {
   return (
     <footer>
-      <div className='bg-black pt-[89px]'>
+      <div className='bg-primary pt-[89px]'>
         <div className='grid lg:grid-cols-3 lg:gap-[6vw] gap-[60px] md:grid-cols-2 grid-cols-1 pr-primary pl-primary'>
           <LogoSection />
           <LinkSection />

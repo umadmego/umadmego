@@ -1,7 +1,7 @@
 import React from 'react';
 import AppLayout from '../layout/AppLayout';
 import Image from 'next/image';
-import BrandImage from '@/assets/brand/logo-white.png';
+import BrandImage from '@/assets/brand/logo-2026.png';
 
 const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   return (

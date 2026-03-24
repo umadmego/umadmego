@@ -1,5 +1,5 @@
 .button {
-  background-color: #FF6634;
+  background-color: #6B4F4B;
   padding-inline: 20px;
   width: fit-content;
   max-width: 100% !important;
@@ -20,6 +20,6 @@
 
 .button:hover {
   background-color: #fff;
-  color: #FF6634;
-  border: 2px solid #FF6634;
+  color: #6B4F4B;
+  border: 2px solid #6B4F4B;
 }
