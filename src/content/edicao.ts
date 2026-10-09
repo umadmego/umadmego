@@ -76,11 +76,11 @@ export const edicao: Edicao = {
       {
         canal: 'whatsapp',
         rotulo: 'Peça pelo WhatsApp',
-        link: 'https://wa.me/556292960677?text=' + encodeURIComponent('Olá! Quero comprar a camiseta oficial El Rói.'),
+        link: 'https://wa.me/5562992960677?text=' + encodeURIComponent('Olá! Quero comprar a camiseta oficial El Rói.'),
       },
       { canal: 'instagram', rotulo: 'Peça pelo Instagram', link: 'https://www.instagram.com/umadmego/' },
     ],
-    observacao: 'WhatsApp: (62) 9296-0677',
+    observacao: 'WhatsApp: (62) 99296-0677',
   },
 };
 
