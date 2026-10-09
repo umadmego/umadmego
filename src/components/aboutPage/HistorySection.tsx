@@ -24,8 +24,8 @@ const HistorySection = () => {
 
             <div className="max-w-4xl mx-auto flex flex-col gap-6 text-justify text-lg leading-relaxed">
                 <p>
-                    <span className="text-primary font-semibold">"Persistência!"</span> – Um clamor que ressoa nos corações dos jovens que se preparam para um grande movimento de fé, avivamento e transformação.
-                    <br />A <span className="font-semibold">UMADMEGO 2K26</span> vai além de um congresso: é um chamado urgente para os jovens de Goiás se posicionarem como verdadeiros agentes de mudança, levando o Reino de Deus a cada canto da sua geração.
+                    <span className="text-primary font-semibold">"El Rói – O Deus que me vê"</span> – Um clamor que ressoa nos corações dos jovens que se preparam para um grande movimento de fé, avivamento e transformação.
+                    <br />A <span className="font-semibold">UMADMEGO 2K27</span> vai além de um congresso: é um chamado urgente para os jovens de Goiás se posicionarem como verdadeiros agentes de mudança, levando o Reino de Deus a cada canto da sua geração.
                 </p>
 
                 <p>

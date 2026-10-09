@@ -6,9 +6,9 @@ const YouTubePlaylists = () => {
       <div className="container mx-auto text-center">
 
         <div className="mb-12">
-          <h2 className="text-4xl font-bold mb-4">UMADMEGO 2026</h2>
+          <h2 className="text-4xl font-bold mb-4">UMADMEGO 2027</h2>
           <p className="text-xl text-gray-700">
-            O próximo congresso já tem data marcada! Prepare-se para dias inesquecíveis de 13 a 17 de fevereiro de 2026. Em breve, mais informações.
+            O 25º Congresso UMADMEGO já tem data marcada! Prepare-se para dias inesquecíveis de 6 a 10 de fevereiro de 2027, com o tema "El Rói – O Deus que me vê". Em breve, mais informações.
           </p>
         </div>
 

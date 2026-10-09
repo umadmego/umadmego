@@ -9,8 +9,8 @@ const slides = [
   {
     id: 1,
     image: '/images/home/slider/slider12.jpg',
-    title: 'UMADMEGO 2026',
-    subtitle: '14 a 17 de fevereiro',
+    title: 'UMADMEGO 2027',
+    subtitle: '6 a 10 de fevereiro · El Rói, o Deus que me vê',
     buttonText: 'Evento Gratuito',
     buttonLink: '/about',
   },

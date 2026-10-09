@@ -2,8 +2,8 @@ import Head from 'next/head';
 import React from 'react';
 
 function HeadElement({
-  pageTitle = 'UMADMEGO 2K26',
-  description = 'Persistência!',
+  pageTitle = 'UMADMEGO 2K27',
+  description = 'El Rói – O Deus que me vê. 25º Congresso UMADMEGO, de 6 a 10 de fevereiro de 2027.',
   noIndex = false,
 }: {
   pageTitle?: string;
