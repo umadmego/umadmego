@@ -68,9 +68,9 @@ export const edicao: Edicao = {
   loja: {
     titulo: 'Camiseta oficial',
     descricao: 'A mensagem do El Rói estampada na frente e nas costas. Vista o tema e leve essa mensagem para a sua cidade. Pedidos pelo link na bio do Instagram.',
-    preco: 'R$ 55,00',
+    preco: 'R$ 60,00',
     imagem: camiseta2027,
-    imagemAlt: 'Camiseta oficial El Rói: frente com a frase “O Deus que me vê” e costas com a arte do tema. Peça a sua pelo link da bio, R$ 55,00',
+    imagemAlt: 'Camiseta oficial El Rói: frente com a frase “O Deus que me vê” e costas com a arte do tema. Peça a sua pelo link da bio, R$ 60,00',
     link: 'https://www.instagram.com/umadmego/',
     chamada: 'Peça a sua no Instagram',
   },
