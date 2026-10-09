@@ -1,19 +1,24 @@
 @import 'tailwindcss';
 
+/*
+ * Identidade permanente: tinta, papel e uma cor por edição.
+ * A cor da edição (--color-edicao) é definida em src/content/edicao.ts e aplicada pelo AppLayout.
+ */
 @theme {
-  --font-primary: 'DM Sans', sans-serif;
-  --font-secondary: 'Sora', sans-serif;
-  --font-cursive: 'Kaushan Script', cursive;
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 
-  --color-primary: #6b4f4b;
-  --color-secondary: #ddcdbb;
-  --color-success: #08a05c;
-  --color-error: #f13637;
-  --color-warning: #ffc107;
-  --color-lightGrey: #a9a9a9;
-  --color-light: white;
-
-  --spacing-primary: 6vw;
+  --color-tinta: #151413;
+  --color-carvao: #0c0b0a;
+  --color-grafite: #3a3734;
+  --color-pedra: #6e6a64;
+  --color-cinza: #b9b3a9;
+  --color-fosco: #8f897f;
+  --color-borda-escura: #2a2826;
+  --color-linha: #d9d4cb;
+  --color-areia: #e9e5dd;
+  --color-papel: #f3f0ea;
+  --color-edicao: #d42a20;
 }
 
 /* Tailwind 4 usa currentColor como cor de borda padrão; mantém o padrão do v3. */
@@ -25,29 +30,31 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-papel);
+    color: var(--color-tinta);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  scroll-behavior: smooth !important;
-  overflow-x: hidden;
-  color: #6B4F4B;
+@utility titulo {
+  font-weight: 800;
+  font-stretch: 70%;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
 }
 
-* {
-  line-height: normal !important;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: white !important;
-}
-
-.swiper-pagination-bullet {
-  background-color: white !important;
+@utility rotulo {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }

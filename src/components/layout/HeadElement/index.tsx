@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import React from 'react';
+import { site } from '@/content/site';
 
 function HeadElement({
-  pageTitle = 'UMADMEGO 2K27',
-  description = 'El Rói – O Deus que me vê. 25º Congresso UMADMEGO, de 6 a 10 de fevereiro de 2027.',
+  pageTitle = site.nome,
+  description = site.descricao,
   noIndex = false,
 }: {
   pageTitle?: string;
@@ -16,7 +17,7 @@ function HeadElement({
       <link rel='icon' href='/favicon.ico' />
 
       <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <meta name='theme-color' content='#000000' />
+      <meta name='theme-color' content='#151413' />
 
       <title>{pageTitle}</title>
       <meta name='title' content={pageTitle} />
