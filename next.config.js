@@ -3,18 +3,6 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   reactStrictMode: true,
-  env: {
-    SESSION_NAME: '',
-    SESSION_KEY: '',
-    API_URL: '',
-    API_KEY: '',
-    YOUTUBE_API_KEY: '',
-    YOUTUBE_UPLOAD_KEY: '',
-    YOUTUBE_CHANNEL_ID: '',
-  },
-  experimental: {
-    useCache: true,
-  },
   images: {
     unoptimized: true,
   },

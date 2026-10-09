@@ -82,10 +82,10 @@ const PartnerSection = () => {
 
                     <div className="text-center mb-6">
                         <a
-                            href='http://pag.ae/7_CYHNQwa'
+                            href='https://pag.ae/7_CYHNQwa'
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='bg-primary text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-opacity-80 transition'
+                            className='bg-primary text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-primary/80 transition'
                         >
                             Fazer Pagamento Recorrente
                         </a>
@@ -105,7 +105,7 @@ const PartnerSection = () => {
                             href='https://lojaumadmego.lojavirtuolpro.com/associados/c'
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='bg-primary text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-opacity-80 transition'
+                            className='bg-primary text-white font-bold py-3 px-6 rounded-lg inline-block hover:bg-primary/80 transition'
                         >
                             Fazer Pagamento Avulso
                         </a>

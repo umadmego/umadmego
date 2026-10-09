@@ -12,7 +12,7 @@ function Navbar() {
         <Link href="/">
           <Image
             src={Logo}
-            alt="The Father's House"
+            alt="UMADMEGO"
             className="h-[90px] w-auto p-2"
           />
         </Link>

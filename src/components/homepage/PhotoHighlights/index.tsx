@@ -26,15 +26,6 @@ const photoHighlights = [
 const PhotoHighlights: React.FC = () => {
   return (
     <section className="py-16 px-4 bg-primary text-white">
-       <style jsx global>{`
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: white !important;
-        }
-        .swiper-pagination-bullet {
-          background-color: white !important;
-        }
-      `}</style>
       <div className="container mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Destaques da Última Edição</h2>
         
@@ -67,7 +58,7 @@ const PhotoHighlights: React.FC = () => {
         </Swiper>
 
         <div className="text-center mt-12">
-          <Link href="/photo" className="bg-secondary text-primary font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300">
+          <Link href="/photo" className="bg-secondary text-primary hover:bg-secondary/90 font-bold py-3 px-8 rounded-full  transition-all duration-300">
               Ver Galeria Completa
           </Link>
         </div>

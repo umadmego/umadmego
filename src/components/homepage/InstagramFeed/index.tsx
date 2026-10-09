@@ -5,7 +5,7 @@ const InstagramFeed: React.FC = () => {
   // Esse hook garante que o script do Instagram rode sempre que a página carregar
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = "//www.instagram.com/embed.js";
+    script.src = "https://www.instagram.com/embed.js";
     script.async = true;
     document.body.appendChild(script);
 

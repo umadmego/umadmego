@@ -1,6 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-primary: 'DM Sans', sans-serif;
+  --font-secondary: 'Sora', sans-serif;
+  --font-cursive: 'Kaushan Script', cursive;
+
+  --color-primary: #6b4f4b;
+  --color-secondary: #ddcdbb;
+  --color-success: #08a05c;
+  --color-error: #f13637;
+  --color-warning: #ffc107;
+  --color-lightGrey: #a9a9a9;
+  --color-light: white;
+
+  --spacing-primary: 6vw;
+}
+
+/* Tailwind 4 usa currentColor como cor de borda padrão; mantém o padrão do v3. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 html,
 body {
@@ -18,81 +43,11 @@ body {
   line-height: normal !important;
 }
 
-/* Input styles */
-.inputContainer {
-  display: flex;
-  gap: 5px;
-  flex-direction: column;
-  position: relative;
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
 }
 
-.inputContainer>label {
-  font-size: 1.02038125rem;
-  font-weight: 400;
-  color: #6B4F4B;
-}
-
-.formContainer>h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-top: 59.87px;
-  /* margin-bottom: 9px; */
-}
-
-.inputContainer>* input,
-textarea {
-  padding-block: 16px;
-  padding-inline: 12px;
-  font-size: 1.02038125rem;
-  font-family: 'Poppins', sans-serif;
-  border: 1px solid #6B4F4B;
-  border-radius: 5px;
-  width: 100%;
-  color: #6B4F4B;
-}
-
-.inputContainer>* input:focus,
-textarea:focus {
-  border: 1px solid #6B4F4B !important;
-  outline: 1px solid #6B4F4B !important;
-}
-
-.inputContainer>* input::placeholder,
-textarea::placeholder {
-  color: #DDCDBB;
-  font-style: italic;
-}
-
-.inputError {
-  border: 1px solid #F13637 !important;
-}
-
-.error {
-  color: #F13637;
-  font-size: 0.75rem;
-}
-
-.errorText {
-  color: #F13637;
-}
-
-.line-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scroll-bar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scroll-bar {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+.swiper-pagination-bullet {
+  background-color: white !important;
 }

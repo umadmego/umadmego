@@ -8,7 +8,7 @@ function Umadmidia() {
   return (
     <AppLayout>
       <Head>
-        <script async src="//www.instagram.com/embed.js"></script>
+        <script async src="https://www.instagram.com/embed.js"></script>
       </Head>
       <div className="bg-gray-800 text-white text-center py-12">
         <h1 className="text-5xl font-extrabold">UMADMIDIA</h1>

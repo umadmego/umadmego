@@ -58,7 +58,7 @@ const HeroSlider: React.FC = () => {
             alt={slides[currentSlide].title}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
         </motion.div>
       </AnimatePresence>
 
