@@ -14,7 +14,7 @@ function Hero() {
             União de Mocidade das Assembleias de Deus · Missão em Goiás
           </p>
           <h1 className='titulo text-[56px] leading-[0.92] sm:text-[clamp(64px,8vw,112px)]'>
-            Juventude reunida para adorar.
+            UMADMEGO reunida para adorar.
           </h1>
           <p className='hidden max-w-xl text-[19px] leading-relaxed text-linha sm:block'>
             Todo ano, jovens de Goiás se encontram no Congresso {site.nome} para dias de culto, palavra e comunhão.
