@@ -1,6 +1,6 @@
 import type { StaticImageData } from 'next/image';
 import cartaz2027 from '@/assets/edicoes/2027/cartaz.webp';
-import camiseta2027 from '@/assets/edicoes/2027/camiseta.webp';
+import camiseta2027 from '@/assets/edicoes/2027/camiseta-divulgacao.webp';
 import arteTema2027 from '@/assets/edicoes/2027/arte-tema.webp';
 
 /**
@@ -28,14 +28,16 @@ export type Edicao = {
     arte?: StaticImageData;
     arteAlt?: string;
   };
+  /** Produto divulgado na seção do tema (exige `conceito`). Some do site quando não estiver definido. */
   loja?: {
     titulo: string;
     descricao: string;
     preco: string;
     imagem: StaticImageData;
     imagemAlt: string;
-    link: string;
-    chamada: string;
+    /** Contatos para compra; o primeiro vira o botão principal. */
+    contatos: { canal: 'whatsapp' | 'instagram'; rotulo: string; link: string }[];
+    observacao?: string;
   };
 };
 
@@ -66,12 +68,19 @@ export const edicao: Edicao = {
   },
   loja: {
     titulo: 'Camiseta oficial',
-    descricao: 'Estampa do tema El Rói, frente e costas. Pedidos pelo link na bio do Instagram.',
-    preco: 'R$ 55,00',
+    descricao: 'A mensagem do El Rói estampada na frente e nas costas. Vista o tema e leve essa mensagem para a sua cidade. Pedidos pelo WhatsApp ou pelo Instagram.',
+    preco: 'R$ 60,00',
     imagem: camiseta2027,
-    imagemAlt: 'Camiseta oficial El Rói, frente e costas',
-    link: 'https://www.instagram.com/umadmego/',
-    chamada: 'Peça a sua no Instagram',
+    imagemAlt: 'Camiseta oficial El Rói: frente com a frase “O Deus que me vê” e costas com a arte do tema. Peça a sua pelo link da bio, R$ 60,00',
+    contatos: [
+      {
+        canal: 'whatsapp',
+        rotulo: 'Peça pelo WhatsApp',
+        link: 'https://wa.me/5562992960677?text=' + encodeURIComponent('Olá! Quero comprar a camiseta oficial El Rói.'),
+      },
+      { canal: 'instagram', rotulo: 'Peça pelo Instagram', link: 'https://www.instagram.com/umadmego/' },
+    ],
+    observacao: 'WhatsApp: (62) 99296-0677',
   },
 };
 
