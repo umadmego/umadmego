@@ -1,98 +1,60 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  scroll-behavior: smooth !important;
-  overflow-x: hidden;
-  color: #6B4F4B;
+/*
+ * Identidade permanente: tinta, papel e uma cor por edição.
+ * A cor da edição (--color-edicao) é definida em src/content/edicao.ts e aplicada pelo AppLayout.
+ */
+@theme {
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --color-tinta: #151413;
+  --color-carvao: #0c0b0a;
+  --color-grafite: #3a3734;
+  --color-pedra: #6e6a64;
+  --color-cinza: #b9b3a9;
+  --color-fosco: #8f897f;
+  --color-borda-escura: #2a2826;
+  --color-linha: #d9d4cb;
+  --color-areia: #e9e5dd;
+  --color-papel: #f3f0ea;
+  --color-edicao: #d42a20;
 }
 
-* {
-  line-height: normal !important;
+/* Tailwind 4 usa currentColor como cor de borda padrão; mantém o padrão do v3. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-papel);
+    color: var(--color-tinta);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
-/* Input styles */
-.inputContainer {
-  display: flex;
-  gap: 5px;
-  flex-direction: column;
-  position: relative;
+@utility titulo {
+  font-weight: 800;
+  font-stretch: 70%;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
 }
 
-.inputContainer>label {
-  font-size: 1.02038125rem;
-  font-weight: 400;
-  color: #6B4F4B;
-}
-
-.formContainer>h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-top: 59.87px;
-  /* margin-bottom: 9px; */
-}
-
-.inputContainer>* input,
-textarea {
-  padding-block: 16px;
-  padding-inline: 12px;
-  font-size: 1.02038125rem;
-  font-family: 'Poppins', sans-serif;
-  border: 1px solid #6B4F4B;
-  border-radius: 5px;
-  width: 100%;
-  color: #6B4F4B;
-}
-
-.inputContainer>* input:focus,
-textarea:focus {
-  border: 1px solid #6B4F4B !important;
-  outline: 1px solid #6B4F4B !important;
-}
-
-.inputContainer>* input::placeholder,
-textarea::placeholder {
-  color: #DDCDBB;
-  font-style: italic;
-}
-
-.inputError {
-  border: 1px solid #F13637 !important;
-}
-
-.error {
-  color: #F13637;
-  font-size: 0.75rem;
-}
-
-.errorText {
-  color: #F13637;
-}
-
-.line-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scroll-bar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scroll-bar {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+@utility rotulo {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
