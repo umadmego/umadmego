@@ -2,6 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 import Botao from '@/components/ui/Botao';
 import { Container } from '@/components/ui/Secao';
+import { FaWhatsapp } from 'react-icons/fa';
+import { FiInstagram } from 'react-icons/fi';
 import { edicao } from '@/content/edicao';
 
 /** Explicação do tema da edição: conceito, referência bíblica e mensagem. */
@@ -61,9 +63,19 @@ function Tema() {
               <h3 className='titulo text-[40px] sm:text-[56px]'>{loja.titulo}</h3>
               <p className='text-lg leading-relaxed text-linha'>{loja.descricao}</p>
               <p className='text-[32px] font-extrabold [font-stretch:75%] sm:text-[40px]'>{loja.preco}</p>
-              <Botao href={loja.link} variante='edicao' className='self-start'>
-                {loja.chamada}
-              </Botao>
+              <div className='flex flex-wrap gap-3'>
+                {loja.contatos.map((contato, indice) => (
+                  <Botao key={contato.link} href={contato.link} variante={indice === 0 ? 'edicao' : 'contorno-claro'}>
+                    {contato.canal === 'whatsapp' ? (
+                      <FaWhatsapp size={20} aria-hidden='true' />
+                    ) : (
+                      <FiInstagram size={20} aria-hidden='true' />
+                    )}
+                    {contato.rotulo}
+                  </Botao>
+                ))}
+              </div>
+              {loja.observacao && <p className='text-sm text-cinza'>{loja.observacao}</p>}
             </div>
           </div>
         )}

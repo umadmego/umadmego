@@ -35,8 +35,9 @@ export type Edicao = {
     preco: string;
     imagem: StaticImageData;
     imagemAlt: string;
-    link: string;
-    chamada: string;
+    /** Contatos para compra; o primeiro vira o botão principal. */
+    contatos: { canal: 'whatsapp' | 'instagram'; rotulo: string; link: string }[];
+    observacao?: string;
   };
 };
 
@@ -67,12 +68,19 @@ export const edicao: Edicao = {
   },
   loja: {
     titulo: 'Camiseta oficial',
-    descricao: 'A mensagem do El Rói estampada na frente e nas costas. Vista o tema e leve essa mensagem para a sua cidade. Pedidos pelo link na bio do Instagram.',
+    descricao: 'A mensagem do El Rói estampada na frente e nas costas. Vista o tema e leve essa mensagem para a sua cidade. Pedidos pelo WhatsApp ou pelo Instagram.',
     preco: 'R$ 60,00',
     imagem: camiseta2027,
     imagemAlt: 'Camiseta oficial El Rói: frente com a frase “O Deus que me vê” e costas com a arte do tema. Peça a sua pelo link da bio, R$ 60,00',
-    link: 'https://www.instagram.com/umadmego/',
-    chamada: 'Peça a sua no Instagram',
+    contatos: [
+      {
+        canal: 'whatsapp',
+        rotulo: 'Peça pelo WhatsApp',
+        link: 'https://wa.me/556292960677?text=' + encodeURIComponent('Olá! Quero comprar a camiseta oficial El Rói.'),
+      },
+      { canal: 'instagram', rotulo: 'Peça pelo Instagram', link: 'https://www.instagram.com/umadmego/' },
+    ],
+    observacao: 'WhatsApp: (62) 9296-0677',
   },
 };
 
