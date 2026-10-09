@@ -1,6 +1,7 @@
 import type { StaticImageData } from 'next/image';
 import cartaz2027 from '@/assets/edicoes/2027/cartaz.webp';
 import camiseta2027 from '@/assets/edicoes/2027/camiseta.webp';
+import arteTema2027 from '@/assets/edicoes/2027/arte-tema.webp';
 
 /**
  * Dados da edição atual do congresso.
@@ -19,6 +20,14 @@ export type Edicao = {
   cor: string;
   cartaz: StaticImageData;
   cartazAlt: string;
+  /** Explicação do tema. Some do site quando não estiver definida. */
+  conceito?: {
+    referencia: string;
+    paragrafos: string[];
+    mensagem: string;
+    arte?: StaticImageData;
+    arteAlt?: string;
+  };
   loja?: {
     titulo: string;
     descricao: string;
@@ -44,6 +53,17 @@ export const edicao: Edicao = {
   cor: '#D42A20',
   cartaz: cartaz2027,
   cartazAlt: 'Cartaz do Congresso UMADMEGO 2027 — El Rói, o Deus que me vê — 6 a 10 de fevereiro de 2027',
+  conceito: {
+    referencia: 'Gênesis 16.13-16',
+    paragrafos: [
+      'Na Bíblia, Agar estava rejeitada e fugindo para o deserto, sentindo-se a pessoa mais esquecida do mundo. O Anjo do Senhor a encontra e ela percebe que não é invisível.',
+      'Hoje, o maior deserto da nossa juventude não é um lugar de terra e areia, mas sim a cidade lotada. É a dor de estar no meio da multidão, conectado o tempo todo, e ainda assim se sentir completamente sozinho e não notado por ninguém.',
+    ],
+    mensagem:
+      'O nosso maior deserto hoje não é um lugar vazio. É estar cercado por milhares de pessoas e, ainda assim, se sentir completamente invisível. É ser apenas mais um rosto borrado no meio da multidão. Agar estava sozinha e sem futuro, mas o Criador parou o universo para olhar para ela. Não importa quantas pessoas passem por você sem te notar. No meio do caos, Ele encontra você. EL RÓI. O Deus que me vê.',
+    arte: arteTema2027,
+    arteAlt: 'Arte do tema El Rói: multidão desenhada em vermelho com dois rostos destacados por marcações de foco e a citação de Gênesis 16.13-16',
+  },
   loja: {
     titulo: 'Camiseta oficial',
     descricao: 'Estampa do tema El Rói, frente e costas. Pedidos pelo link na bio do Instagram.',
