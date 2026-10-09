@@ -50,7 +50,7 @@ src/
 ## Como virar o ano
 
 1. Coloque o cartaz e a camiseta da nova edição em `src/assets/edicoes/<ano>/`.
-2. Em `src/content/edicao.ts`, mova a edição atual para o topo de `edicoesAnteriores` (com a playlist do YouTube, se houver) e preencha `edicao` com os dados novos: ano, número, tema, datas, local, cor de destaque e imagens. Para esconder a seção da loja, apague `loja`.
+2. Em `src/content/edicao.ts`, mova a edição atual para o topo de `edicoesAnteriores` (com a playlist do YouTube, se houver) e preencha `edicao` com os dados novos: ano, número, tema, explicação do tema (`conceito`), datas, local, cor de destaque e imagens. Para esconder a seção do tema ou da loja, apague `conceito` ou `loja`.
 3. A cor de destaque precisa ter contraste com texto branco (≥ 4,5:1).
 
 ## Onde editar o resto
