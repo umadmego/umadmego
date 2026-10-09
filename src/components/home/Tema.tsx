@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
+import Botao from '@/components/ui/Botao';
 import { Container } from '@/components/ui/Secao';
 import { edicao } from '@/content/edicao';
 
 /** Explicação do tema da edição: conceito, referência bíblica e mensagem. */
 function Tema() {
-  const conceito = edicao.conceito;
+  const { conceito, loja } = edicao;
   if (!conceito) return null;
 
   return (
@@ -43,6 +44,29 @@ function Tema() {
             “{conceito.mensagem}”
           </blockquote>
         </figure>
+
+        {loja && (
+          <div className='flex flex-wrap items-center gap-8 bg-carvao p-4 sm:gap-12 sm:p-8'>
+            <Image
+              src={loja.imagem}
+              alt={loja.imagemAlt}
+              sizes='(min-width: 1024px) 760px, 100vw'
+              className='aspect-[16/10] w-full min-w-0 flex-[3_1_480px] object-cover'
+            />
+            <div className='flex min-w-0 flex-[2_1_300px] flex-col gap-4 pb-2 sm:gap-5'>
+              <p className='rotulo flex items-center gap-2 text-cinza'>
+                <span className='block size-2 bg-edicao' />
+                Vista o tema
+              </p>
+              <h3 className='titulo text-[40px] sm:text-[56px]'>{loja.titulo}</h3>
+              <p className='text-lg leading-relaxed text-linha'>{loja.descricao}</p>
+              <p className='text-[32px] font-extrabold [font-stretch:75%] sm:text-[40px]'>{loja.preco}</p>
+              <Botao href={loja.link} variante='edicao' className='self-start'>
+                {loja.chamada}
+              </Botao>
+            </div>
+          </div>
+        )}
       </Container>
     </section>
   );

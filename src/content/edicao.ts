@@ -1,6 +1,6 @@
 import type { StaticImageData } from 'next/image';
 import cartaz2027 from '@/assets/edicoes/2027/cartaz.webp';
-import camiseta2027 from '@/assets/edicoes/2027/camiseta.webp';
+import camiseta2027 from '@/assets/edicoes/2027/camiseta-divulgacao.webp';
 import arteTema2027 from '@/assets/edicoes/2027/arte-tema.webp';
 
 /**
@@ -28,6 +28,7 @@ export type Edicao = {
     arte?: StaticImageData;
     arteAlt?: string;
   };
+  /** Produto divulgado na seção do tema (exige `conceito`). Some do site quando não estiver definido. */
   loja?: {
     titulo: string;
     descricao: string;
@@ -66,10 +67,10 @@ export const edicao: Edicao = {
   },
   loja: {
     titulo: 'Camiseta oficial',
-    descricao: 'Estampa do tema El Rói, frente e costas. Pedidos pelo link na bio do Instagram.',
+    descricao: 'A mensagem do El Rói estampada na frente e nas costas. Vista o tema e leve essa mensagem para a sua cidade. Pedidos pelo link na bio do Instagram.',
     preco: 'R$ 55,00',
     imagem: camiseta2027,
-    imagemAlt: 'Camiseta oficial El Rói, frente e costas',
+    imagemAlt: 'Camiseta oficial El Rói: frente com a frase “O Deus que me vê” e costas com a arte do tema. Peça a sua pelo link da bio, R$ 55,00',
     link: 'https://www.instagram.com/umadmego/',
     chamada: 'Peça a sua no Instagram',
   },
