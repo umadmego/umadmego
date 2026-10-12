@@ -17,7 +17,7 @@ function PaginaEdicao({ ano }: Props) {
   const titulo = edicao.tema ?? `Congresso ${ano}`;
   const fotos = albuns.filter((album) => album.edicao === ano);
   const outras = edicoesAnteriores.filter((anterior) => anterior.ano !== ano);
-  const temDados = edicao.cartaz || edicao.datas || edicao.local;
+  const temDados = edicao.cartaz || edicao.datas || edicao.local || edicao.convidados;
   const referencia = edicao.referencia ?? edicao.conceito?.referencia;
   const descricao = [
     `${edicao.numero ? `${edicao.numero} Congresso` : 'Congresso'} da UMADMEGO ${ano}: ${titulo}.`,
@@ -47,7 +47,7 @@ function PaginaEdicao({ ano }: Props) {
                   src={edicao.cartaz}
                   alt={edicao.cartazAlt ?? `Cartaz do Congresso UMADMEGO ${ano}`}
                   sizes='(min-width: 1024px) 400px, 100vw'
-                  className='aspect-[4/5] w-full max-w-sm object-cover'
+                  className='h-auto w-full max-w-sm'
                 />
               )}
               <dl className='grid min-w-0 flex-[1_1_400px] gap-6 sm:grid-cols-2'>
@@ -62,6 +62,18 @@ function PaginaEdicao({ ano }: Props) {
                     <dt className='rotulo text-pedra'>Local</dt>
                     <dd className='text-xl font-bold'>{edicao.local.nome}</dd>
                     {edicao.local.endereco && <dd className='text-grafite'>{edicao.local.endereco}</dd>}
+                  </div>
+                )}
+                {edicao.convidados && (
+                  <div className='flex flex-col gap-2 border-t border-linha pt-5 sm:col-span-2'>
+                    <dt className='rotulo text-pedra'>Convidados</dt>
+                    <dd>
+                      <ul className='flex flex-col gap-1 text-lg font-semibold'>
+                        {edicao.convidados.map((convidado) => (
+                          <li key={convidado}>{convidado}</li>
+                        ))}
+                      </ul>
+                    </dd>
                   </div>
                 )}
               </dl>
