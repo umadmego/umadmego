@@ -38,6 +38,7 @@ function PaginaEdicao({ ano }: Props) {
           {referencia && <p className='rotulo text-cinza'>{referencia}</p>}
           {edicao.chamada && <p className='max-w-2xl text-lg leading-relaxed text-linha'>{edicao.chamada}</p>}
         </CabecalhoPagina>
+        <div aria-hidden='true' className='h-2 bg-edicao' />
 
         {temDados && (
           <section className='border-b border-linha'>
