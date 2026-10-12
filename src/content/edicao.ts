@@ -95,11 +95,12 @@ export const edicoesAnteriores: EdicaoAnterior[] = [
   { ano: 2026, tema: 'Persistência' },
   {
     ano: 2025,
-    tema: 'Eis que cedo venho',
+    tema: 'Ele vem',
     playlist: 'https://www.youtube.com/embed/videoseries?list=PLtkZK7cmglg5KwTf3Mhwe-MgGbzJa6Fyi',
   },
   {
     ano: 2024,
+    tema: 'Tempo de Romper',
     playlist: 'https://www.youtube.com/embed/videoseries?list=PLtkZK7cmglg72U_LEHRJdxbxaaCCvh_Vi',
   },
 ];
