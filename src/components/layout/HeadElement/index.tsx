@@ -21,10 +21,10 @@ function HeadElement({
 
       <title>{pageTitle}</title>
       <meta name='title' content={pageTitle} />
-      <meta name='description' content={description} />
+      <meta name='description' content={description} key='description' />
 
-      <meta property='og:title' content={pageTitle} />
-      <meta property='og:description' content={description} />
+      <meta property='og:title' content={pageTitle} key='og:title' />
+      <meta property='og:description' content={description} key='og:description' />
       <meta property='og:type' content='website' />
       <meta property='og:locale' content='pt_BR' />
 

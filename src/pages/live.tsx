@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FiYoutube } from 'react-icons/fi';
 import AppLayout from '@/components/layout/AppLayout';
@@ -63,10 +64,14 @@ function Live() {
             <div className='grid gap-10 lg:grid-cols-2'>
               {comVideos.map((anterior) => (
                 <article key={anterior.ano} className='flex flex-col gap-4'>
-                  <div className='flex items-baseline gap-4 border-t-2 border-tinta pt-4'>
+                  <Link
+                    href={`/edicoes/${anterior.ano}`}
+                    className='flex flex-wrap items-baseline gap-x-4 border-t-2 border-tinta pt-4 hover:opacity-80'
+                  >
                     <span className='titulo text-[40px]'>{anterior.ano}</span>
                     <span className='font-semibold text-grafite'>{anterior.tema ?? `Congresso ${anterior.ano}`}</span>
-                  </div>
+                    <span className='ml-auto font-semibold'>Ver edição →</span>
+                  </Link>
                   <iframe
                     src={anterior.playlist}
                     title={`Vídeos do congresso UMADMEGO ${anterior.ano}`}

@@ -19,9 +19,16 @@ function PaginaEdicao({ ano }: Props) {
   const outras = edicoesAnteriores.filter((anterior) => anterior.ano !== ano);
   const temDados = edicao.cartaz || edicao.datas || edicao.local;
   const referencia = edicao.referencia ?? edicao.conceito?.referencia;
+  const descricao = [
+    `${edicao.numero ? `${edicao.numero} Congresso` : 'Congresso'} da UMADMEGO ${ano}: ${titulo}.`,
+    edicao.datas && `De ${edicao.datas}.`,
+    fotos.length > 0 || edicao.playlist ? 'Reveja as fotos e os vídeos.' : undefined,
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
-    <AppLayout title={`${titulo} · ${ano}`}>
+    <AppLayout title={`${titulo} · ${ano}`} description={descricao}>
       {/* A cor da edição, quando definida, substitui a da edição atual nesta página. */}
       <div style={edicao.cor ? ({ '--color-edicao': edicao.cor } as React.CSSProperties) : undefined}>
         <CabecalhoPagina
