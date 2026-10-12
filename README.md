@@ -34,9 +34,18 @@ npm run typecheck  # verifica os tipos (rode depois de dev ou build, que geram o
 
 ## Publicação
 
-`npm run build` gera a pasta `out/` com o site pronto. Publique o conteúdo dessa pasta na hospedagem. A pasta **não é versionada** (está no `.gitignore`), então gere de novo a cada atualização.
+O site fica no Firebase Hosting, no projeto `umadmego-53984042-222cd`: https://umadmego-53984042-222cd.web.app
 
-Para conferir o resultado localmente:
+`npm run build` gera a pasta `out/` com o site pronto, e o deploy publica essa pasta (configurado em `firebase.json` e `.firebaserc`). A pasta **não é versionada** (está no `.gitignore`), então gere de novo a cada atualização:
+
+```bash
+npm run build                    # gera out/
+firebase deploy --only hosting   # publica out/ no Firebase
+```
+
+O deploy precisa do [Firebase CLI](https://firebase.google.com/docs/cli) (`npm install -g firebase-tools`) logado (`firebase login`) com uma conta que tenha acesso ao projeto.
+
+Para conferir o resultado localmente antes de publicar:
 
 ```bash
 python3 -m http.server --directory out 8080
