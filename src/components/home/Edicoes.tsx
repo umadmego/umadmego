@@ -21,7 +21,7 @@ function Edicoes() {
           {edicoesAnteriores.map((anterior) => (
             <li key={anterior.ano} className='border-b border-linha'>
               <Link
-                href='/live'
+                href={`/edicoes/${anterior.ano}`}
                 className='flex flex-wrap items-center gap-x-6 gap-y-2 py-4 hover:opacity-80 sm:py-6'
               >
                 <span className='titulo w-[72px] text-[32px] sm:w-[120px] sm:text-[44px]'>{anterior.ano}</span>

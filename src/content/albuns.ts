@@ -1,3 +1,4 @@
+import type { StaticImageData } from 'next/image';
 import SabadoNoite2025 from '@/assets/images/photo/sabadonoite2025.jpg';
 import DomingoManha2025 from '@/assets/images/photo/domingomanha2025.jpg';
 import DomingoNoite2025 from '@/assets/images/photo/domingonoite2025.jpg';
@@ -26,24 +27,36 @@ import Meninasdefe2025 from '@/assets/images/photo/Meninasdefe2025.jpg';
 import NiverFabio from '@/assets/images/photo/niverFabio.jpeg';
 import Congresso2026 from '@/assets/images/photo/2026.jpg';
 
-const albuns = [
+export type Album = {
+  day: string;
+  link: string;
+  preview: StaticImageData;
+  /** Ano do congresso, para o álbum aparecer na página da edição (/edicoes/<ano>). */
+  edicao?: number;
+};
+
+const albuns: Album[] = [
   {
     day: 'Congresso 2026 - Sábado',
+    edicao: 2026,
     link: 'https://photos.app.goo.gl/Q8FgXwhznur7hK8r8',
     preview: Congresso2026,
   },
   {
     day: 'Congresso 2026 - Domingo',
+    edicao: 2026,
     link: 'https://photos.app.goo.gl/8o1Vjp43N8rUvwtf9',
     preview: Congresso2026,
   },
   {
     day: 'Congresso 2026 - Segunda',
+    edicao: 2026,
     link: 'https://photos.app.goo.gl/6aa6GwDekahX6RHb9',
     preview: Congresso2026,
   },
   {
     day: 'Congresso 2026 - Terça',
+    edicao: 2026,
     link: 'https://photos.app.goo.gl/dLgeCh9mzPWnidDy5',
     preview: Congresso2026,
   },
@@ -74,36 +87,43 @@ const albuns = [
   },
   {
     day: 'Congresso 2025 - Sábado - Noite',
+    edicao: 2025,
     link: 'https://photos.app.goo.gl/TG8dm5jJjPHrnojB8',
     preview: SabadoNoite2025,
   },
   {
     day: 'Congresso 2025 - Domingo - Manhã',
+    edicao: 2025,
     link: 'https://photos.app.goo.gl/FhrR68EhQqGrgC2X6',
     preview: DomingoManha2025,
   },
   {
     day: 'Congresso 2025 - Domingo - Noite',
+    edicao: 2025,
     link: 'https://photos.app.goo.gl/Q7qmdoNSiHyGCgmn6',
     preview: DomingoNoite2025,
   },
   {
     day: 'Congresso 2025 - Segunda - Manhã',
+    edicao: 2025,
     link: 'https://photos.app.goo.gl/qLryXfdHTbKNzvBD8',
     preview: SegundaManha2025,
   },
   {
     day: 'Congresso 2025 - Segunda - Noite',
+    edicao: 2025,
     link: 'https://photos.app.goo.gl/mRmEwB6yhy6KVtwm6',
     preview: SegundaNoite2025,
   },
   {
     day: 'Congresso 2025 - Terça - Manhã',
+    edicao: 2025,
     link: 'https://photos.app.goo.gl/FqXJVMJCXcvJHvwB9',
     preview: TercaManha2025,
   },
   {
     day: 'Congresso 2025 - Terça - Noite',
+    edicao: 2025,
     link: 'https://photos.app.goo.gl/kz8dD3sBu83npPsh8',
     preview: TercaNoite2025,
   },
@@ -129,31 +149,37 @@ const albuns = [
   },
   {
     day: 'Congresso 2024 - Sábado - Noite',
+    edicao: 2024,
     link: 'https://photos.app.goo.gl/RWtUFMcq3sTkWV4o6',
     preview: SabadoNoite2024,
   },
   {
     day: 'Congresso 2024 - Domingo - Manhã',
+    edicao: 2024,
     link: 'https://photos.app.goo.gl/9kbXsXg54VidQPoG7',
     preview: DomingoManha2024,
   },
   {
     day: 'Congresso 2024 - Domingo - Noite',
+    edicao: 2024,
     link: 'https://photos.app.goo.gl/tRpkUzQvevosJk7e6',
     preview: DomingoNoite2024,
   },
   {
     day: 'Congresso 2024 - Segunda - Noite',
+    edicao: 2024,
     link: 'https://photos.app.goo.gl/bobHoXd7EHnzrpYv7',
     preview: SegundaNoite2024,
   },
   {
     day: 'Congresso 2024 - Terça - Manhã',
+    edicao: 2024,
     link: 'https://photos.app.goo.gl/d2KqbwSYuUrZB9Cg9',
     preview: TercaManha2024,
   },
   {
     day: 'Congresso 2024 - Terça - Noite',
+    edicao: 2024,
     link: 'https://photos.app.goo.gl/ZFeVpTXJs6ggerFo6',
     preview: TercaNoite2024,
   },
@@ -174,6 +200,7 @@ const albuns = [
   },
   {
     day: 'Congresso 2023',
+    edicao: 2023,
     link: 'https://photos.app.goo.gl/SomMJv6GLrXNFbsT8',
     preview: Congresso2023,
   },

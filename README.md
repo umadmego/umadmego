@@ -9,6 +9,7 @@ Site oficial da UMADMEGO (União de Mocidade das Assembleias de Deus Missão em 
 | `/` | Cartaz da edição atual, dados do congresso, o tema com a camiseta oficial, fotos em destaque, arquivo de edições e Instagram |
 | `/live` | Transmissão no YouTube, dados da edição atual e vídeos das edições anteriores |
 | `/photo` | Álbuns de fotos (abrem no Google Fotos) |
+| `/edicoes/<ano>` | Uma página para cada edição que já passou: tema, cartaz, datas, local, vídeos e álbuns do congresso |
 | `/umadmidia` | Equipe de mídia e posts do Instagram |
 | `/about` | História da UMADMEGO |
 | `/contact` | Endereço, e-mail e redes sociais |
@@ -53,7 +54,7 @@ A identidade é neutra e permanente — **tinta, papel e uma cor por edição**:
 
 1. Crie `src/assets/edicoes/<ano>/` com o cartaz, a arte do tema e a imagem de divulgação da camiseta.
 2. Em `src/content/edicao.ts`:
-   - mova a edição atual para o topo de `edicoesAnteriores` (com a playlist do YouTube, se houver);
+   - mova a edição atual para o topo de `edicoesAnteriores`, levando `numero`, `tema`, `datas`, `local`, `cor`, `cartaz` e `conceito` (e a playlist do YouTube, se houver) — é isso que aparece na página `/edicoes/<ano>`;
    - preencha `edicao` com os dados novos: ano, número, tema, datas, local, cor de destaque, cartaz, `conceito` (explicação do tema) e `loja` (camiseta).
 3. A cor de destaque precisa ter contraste com texto branco (≥ 4,5:1).
 4. Atualize as fotos em destaque da home (`src/components/home/Destaques.tsx`) quando houver fotos da última edição.
@@ -65,7 +66,8 @@ Para esconder a seção do tema, apague `conceito`. Para esconder a camiseta, ap
 | O que | Onde |
 | --- | --- |
 | Menu, e-mail, endereço e redes sociais | `src/content/site.ts` |
-| Álbuns da página de fotos | `src/content/albuns.ts` |
+| Álbuns da página de fotos | `src/content/albuns.ts` (com `edicao: <ano>`, o álbum também aparece na página daquela edição) |
+| Conteúdo das edições anteriores | `edicoesAnteriores` em `src/content/edicao.ts` (imagens em `src/assets/edicoes/<ano>/`) |
 | Fotos em destaque da home | `src/components/home/Destaques.tsx` |
 | Texto da página Sobre | `src/pages/about.tsx` |
 | Posts do Instagram da Umadmídia | `src/components/umadmidia/FeedInstagram.tsx` |

@@ -84,9 +84,21 @@ export const edicao: Edicao = {
   },
 };
 
+/**
+ * Edição que já passou. Cada uma ganha a página /edicoes/<ano>, que mostra só o que estiver preenchido.
+ * Os álbuns de fotos entram sozinhos: são os de `src/content/albuns.ts` com `edicao: <ano>`.
+ */
 export type EdicaoAnterior = {
   ano: number;
+  numero?: string;
   tema?: string;
+  datas?: string;
+  local?: { nome: string; endereco?: string };
+  /** Cor de destaque da edição na página dela. Sem ela, vale a cor da edição atual. */
+  cor?: string;
+  cartaz?: StaticImageData;
+  cartazAlt?: string;
+  conceito?: Edicao['conceito'];
   /** Playlist do YouTube (link de embed) com as ministrações da edição. */
   playlist?: string;
 };

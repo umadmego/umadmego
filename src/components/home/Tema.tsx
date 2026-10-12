@@ -4,10 +4,10 @@ import Botao from '@/components/ui/Botao';
 import { Container } from '@/components/ui/Secao';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
-import { edicao } from '@/content/edicao';
+import { edicao as edicaoAtual, type Edicao } from '@/content/edicao';
 
-/** Explicação do tema da edição: conceito, referência bíblica e mensagem. */
-function Tema() {
+/** Explicação do tema da edição: conceito, referência bíblica e mensagem. Sem `edicao`, mostra a atual. */
+function Tema({ edicao = edicaoAtual }: { edicao?: Pick<Edicao, 'ano' | 'tema' | 'conceito' | 'loja'> }) {
   const { conceito, loja } = edicao;
   if (!conceito) return null;
 
