@@ -41,3 +41,6 @@ next-env.d.ts
 
 # cache do deploy do Firebase
 .firebase/
+
+# material bruto das edições (cartazes originais, textos); as versões otimizadas ficam em src/assets/edicoes/
+/edicoes/
