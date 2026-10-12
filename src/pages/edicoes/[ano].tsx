@@ -18,6 +18,7 @@ function PaginaEdicao({ ano }: Props) {
   const fotos = albuns.filter((album) => album.edicao === ano);
   const outras = edicoesAnteriores.filter((anterior) => anterior.ano !== ano);
   const temDados = edicao.cartaz || edicao.datas || edicao.local;
+  const referencia = edicao.referencia ?? edicao.conceito?.referencia;
 
   return (
     <AppLayout title={`${titulo} · ${ano}`}>
@@ -26,7 +27,10 @@ function PaginaEdicao({ ano }: Props) {
         <CabecalhoPagina
           rotulo={edicao.numero ? `Arquivo · ${edicao.numero} congresso · ${ano}` : `Arquivo · Congresso ${ano}`}
           titulo={titulo}
-        />
+        >
+          {referencia && <p className='rotulo text-cinza'>{referencia}</p>}
+          {edicao.chamada && <p className='max-w-2xl text-lg leading-relaxed text-linha'>{edicao.chamada}</p>}
+        </CabecalhoPagina>
 
         {temDados && (
           <section className='border-b border-linha'>

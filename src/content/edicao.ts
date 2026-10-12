@@ -98,21 +98,37 @@ export type EdicaoAnterior = {
   cor?: string;
   cartaz?: StaticImageData;
   cartazAlt?: string;
+  /** Texto bíblico base do tema, mostrado no topo da página. Sem ele, vale o de `conceito`. */
+  referencia?: string;
+  /** Frase curta sobre a edição, mostrada no topo da página. */
+  chamada?: string;
+  /** Explicação completa do tema, na mesma seção usada na home. */
   conceito?: Edicao['conceito'];
   /** Playlist do YouTube (link de embed) com as ministrações da edição. */
   playlist?: string;
 };
 
 export const edicoesAnteriores: EdicaoAnterior[] = [
-  { ano: 2026, tema: 'Persistência' },
+  {
+    ano: 2026,
+    numero: '23º',
+    tema: 'Persistência',
+    datas: '14 a 17 de fevereiro de 2026',
+    chamada: 'Em tempos difíceis, somos chamados a permanecer firmes!',
+  },
   {
     ano: 2025,
+    numero: '22º',
     tema: 'Ele vem',
+    datas: '1 a 4 de março de 2025',
+    referencia: 'Apocalipse 22.20 — “Eis que cedo venho”',
     playlist: 'https://www.youtube.com/embed/videoseries?list=PLtkZK7cmglg5KwTf3Mhwe-MgGbzJa6Fyi',
   },
   {
     ano: 2024,
+    numero: '21º',
     tema: 'Tempo de Romper',
+    referencia: 'Isaías 61',
     playlist: 'https://www.youtube.com/embed/videoseries?list=PLtkZK7cmglg72U_LEHRJdxbxaaCCvh_Vi',
   },
 ];
