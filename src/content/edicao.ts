@@ -131,6 +131,15 @@ export const edicoesAnteriores: EdicaoAnterior[] = [
     referencia: 'Gálatas 6.9',
     chamada: '“E não nos cansemos de fazer o bem, pois no tempo próprio colheremos, se não desanimarmos.”',
     convidados: ['André Onasci', 'Bruno Almeida', 'Nerildo Accioly'],
+    conceito: {
+      referencia: 'Gálatas 6.9',
+      paragrafos: [
+        'Paulo escreveu aos gálatas para uma igreja cansada, dividida entre a graça que tinha recebido e a pressão de voltar atrás. No fim da carta, ele não pede um grande feito. Pede constância: não parar de fazer o bem.',
+        'Persistir é isso. Não é a força de um dia, é a fidelidade de todos os dias: orar quando parece que nada muda, servir quando ninguém vê, continuar quando seria mais fácil desistir. A colheita é certa, mas tem o seu tempo.',
+      ],
+      mensagem:
+        'Persistir é continuar mesmo sem vontade. É confiar mesmo sem ver. É fé em ação. O cansaço vai chegar, mas a promessa não muda: no tempo certo, quem não desanimar vai colher. Não pare agora. PERSISTÊNCIA.',
+    },
   },
   {
     ano: 2025,
@@ -150,6 +159,15 @@ export const edicoesAnteriores: EdicaoAnterior[] = [
       'Jéssica Curione (RJ)',
       'Rayslane Lima (GO)',
     ],
+    conceito: {
+      referencia: 'Apocalipse 22.20',
+      paragrafos: [
+        'Apocalipse 22.20 traz as últimas palavras de Jesus na Bíblia: uma promessa curta e firme, “Certamente, cedo venho”. E a resposta de João é a oração que fecha as Escrituras: “Amém! Ora, vem, Senhor Jesus!”',
+        'A volta de Jesus não é uma ideia para dar medo. É a esperança que dá sentido ao presente. Quem espera o Rei vive de outro jeito: vigia, guarda o coração, anuncia o evangelho e não se acomoda com este mundo.',
+      ],
+      mensagem:
+        'A história não termina no caos que a gente vê nas notícias. Ela termina com o Rei voltando. Ele prometeu, e Ele cumpre. Até lá, a nossa resposta é a mesma de João: Amém! Ora, vem, Senhor Jesus! ELE VEM.',
+    },
     playlist: 'https://www.youtube.com/embed/videoseries?list=PLtkZK7cmglg5KwTf3Mhwe-MgGbzJa6Fyi',
   },
   {
@@ -163,6 +181,15 @@ export const edicoesAnteriores: EdicaoAnterior[] = [
     referencia: 'Isaías 61',
     chamada: 'Transformação · Renovação · Coragem · Superação · Liberdade · Resistir',
     convidados: ['Pr. Anselmo Dantas', 'Pr. Josué Martins', 'Pr. Alan Campos', 'Pr. Bruno Andrade (EUA)', 'Amanda Sousa'],
+    conceito: {
+      referencia: 'Isaías 61.1-3',
+      paragrafos: [
+        'Em Isaías 61, o profeta anuncia o Ungido do Senhor, enviado para levar boas-novas aos humildes, curar os quebrantados de coração e proclamar liberdade aos cativos. Séculos depois, Jesus leu esse texto na sinagoga de Nazaré e declarou: “Hoje se cumpriu esta Escritura” (Lucas 4.21).',
+        'É o ano aceitável do Senhor: tempo de trocar cinza por coroa, pranto por alegria, espírito angustiado por veste de louvor. Transformação, renovação, coragem, superação, liberdade e resistência, não como esforço nosso, mas como obra do Espírito em quem se rende a Ele.',
+      ],
+      mensagem:
+        'Tem prisão que não tem grade: vício, medo, culpa, a vida no automático. Mas o Espírito do Senhor está sobre Jesus, e o que Ele veio fazer ainda está valendo. Hoje é tempo de romper com o que te prende e viver a liberdade que Ele conquistou. TEMPO DE ROMPER.',
+    },
     playlist: 'https://www.youtube.com/embed/videoseries?list=PLtkZK7cmglg72U_LEHRJdxbxaaCCvh_Vi',
   },
   {
@@ -175,5 +202,14 @@ export const edicoesAnteriores: EdicaoAnterior[] = [
     referencia: 'Hebreus 12.14',
     chamada: '“Segui a paz com todos, e a santificação, sem a qual ninguém verá o Senhor.”',
     convidados: ['Pr. Sérgio Araújo', 'Pr. Alan Campos', 'Pr. David Ferreira', 'Pr. Welder Xavier', 'Miss. Emanuelly Ribeiro'],
+    conceito: {
+      referencia: 'Hebreus 12.14',
+      paragrafos: [
+        'Hebreus 12 compara a vida cristã a uma corrida: deixar todo peso e o pecado que nos cerca e correr com perseverança, olhando para Jesus. No meio desse chamado, o autor dá duas direções: seguir a paz com todos e a santificação.',
+        'Santificação é ser separado para Deus. Não é aparência nem lista de regras. É uma vida que vai sendo moldada por Ele, nas escolhas, nas palavras e nos relacionamentos. E não é opcional: sem ela, diz o texto, ninguém verá o Senhor.',
+      ],
+      mensagem:
+        'O mundo empurra a gente para ser igual a todo mundo. Deus chama para ser diferente: não melhor que os outros, mas d’Ele. Siga a paz, largue o peso, corra olhando para Jesus. SANTIFICAÇÃO.',
+    },
   },
 ];
