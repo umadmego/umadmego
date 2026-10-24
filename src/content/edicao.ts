@@ -2,6 +2,8 @@ import type { StaticImageData } from 'next/image';
 import cartaz2027 from '@/assets/edicoes/2027/cartaz.webp';
 import camiseta2027 from '@/assets/edicoes/2027/camiseta-divulgacao.webp';
 import arteTema2027 from '@/assets/edicoes/2027/arte-tema.webp';
+import logoVr from '@/assets/edicoes/2027/patrocinadores/vr.webp';
+import logoBelaPiscina from '@/assets/edicoes/2027/patrocinadores/bela-piscina.webp';
 import cartaz2026 from '@/assets/edicoes/2026/cartaz.webp';
 import cartaz2025 from '@/assets/edicoes/2025/cartaz.webp';
 import cartaz2024 from '@/assets/edicoes/2024/cartaz.webp';
@@ -43,7 +45,17 @@ export type Edicao = {
     contatos: { canal: 'whatsapp' | 'instagram'; rotulo: string; link: string }[];
     observacao?: string;
   };
+  /** Patrocinadores da edição e a chamada para novos. Some do site quando não estiver definido. */
+  patrocinio?: {
+    /** Na ordem em que aparecem. `preencher` faz a logo cobrir o quadro todo (para logos com fundo próprio). */
+    patrocinadores: { nome: string; logo: StaticImageData; link?: string; preencher?: boolean }[];
+    beneficios: string[];
+    /** O primeiro vira o botão principal. */
+    contatos: { rotulo: string; link: string }[];
+  };
 };
+
+const whatsapp = (numero: string, mensagem: string) => `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
 export const edicao: Edicao = {
   ano: 2027,
@@ -85,6 +97,22 @@ export const edicao: Edicao = {
       { canal: 'instagram', rotulo: 'Peça pelo Instagram', link: 'https://www.instagram.com/umadmego/' },
     ],
     observacao: 'WhatsApp: (62) 99296-0677',
+  },
+  patrocinio: {
+    patrocinadores: [
+      { nome: 'VR — Capturando momentos e emoções', logo: logoVr },
+      { nome: 'Bela Piscina — Sua piscina sempre linda!', logo: logoBelaPiscina, preencher: true },
+    ],
+    beneficios: [
+      '+4.000 seguidores engajados no Instagram',
+      'Alcance presencial durante o evento',
+      'Exposição em materiais de mídia digital',
+      'Fortaleça sua marca apoiando uma causa transformadora',
+    ],
+    contatos: [
+      { rotulo: 'Falar com a Eliete', link: whatsapp('5562992960677', 'Olá! Quero ser patrocinador do Congresso UMADMEGO 2027.') },
+      { rotulo: 'Falar com o Fábio', link: whatsapp('5562995353934', 'Olá! Quero ser patrocinador do Congresso UMADMEGO 2027.') },
+    ],
   },
 };
 
